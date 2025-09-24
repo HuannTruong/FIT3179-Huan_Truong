@@ -12,20 +12,20 @@
   "layer": [
     {
       "data": {
-        "url": "Week9Homework/output.json",
+        "url": "output.json",
         "format": { "type": "topojson", "feature": "vic_localities" }
       },
       "mark": { "type": "geoshape", "fill": "#f7f7f7", "stroke": "#c9c9c9", "strokeWidth": 0.75 }
     },
     {
       "data": {
-        "url": "Week9Homework/output.json",
+        "url": "output.json",
         "format": { "type": "topojson", "feature": "train_lines_only_noR" }
       },
       "mark": { "type": "geoshape", "fill": null, "stroke": "#404040", "strokeWidth": 1.2 }
     },
     {
-      "data": { "url": "Week9Homework/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+      "data": { "url": "annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
       "transform": [
         { "calculate": "toNumber(datum.Stop_long)", "as": "lon" },
         { "calculate": "toNumber(datum.Stop_lat)",  "as": "lat" },
