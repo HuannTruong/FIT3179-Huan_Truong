@@ -15,14 +15,14 @@
 <div id="symbol_map"></div>
 
 <script type="text/javascript">
-  var spec2 = "map_spec.json";
+  var spec2 = "./map_spec.json";
   vegaEmbed('#symbol_map', spec2).then(function(result) {
   }).catch(console.error);
 
 <div id="restaurant_map"></div>
 
   <script type="text/javascript">
-    vegaEmbed('#restaurant_map', 'restaurant_pricemap.json')
+    vegaEmbed('#restaurant_map', './restaurant_pricemap.json')
       .then(result => console.log("Restaurant price map loaded"))
       .catch(console.error);
   </script>
