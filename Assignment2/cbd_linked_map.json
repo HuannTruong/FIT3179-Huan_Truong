@@ -8,12 +8,12 @@
 
   "layer": [
     {
-      "data": { "url": "./output.json", "format": { "type": "topojson", "feature": "vic_localities" } },
+      "data": { "url": "./data/output.json", "format": { "type": "topojson", "feature": "vic_localities" } },
       "mark": { "type": "geoshape", "fill": "#f7f7f7", "stroke": "#d3d3d3", "strokeWidth": 0.7 }
     },
 
     {
-      "data": { "url": "./train_lines_only_noR.json", "format": { "type": "topojson", "feature": "train_lines_only_noR" } },
+      "data": { "url": "./data/train_lines_only_noR.json", "format": { "type": "topojson", "feature": "train_lines_only_noR" } },
       "mark": { "type": "geoshape", "fill": null, "stroke": "#444", "strokeWidth": 1.2 }
     },
 
