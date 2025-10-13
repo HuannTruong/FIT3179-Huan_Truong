@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Top 10 Melbourne Train Stations — AM vs PM Peak (2024–25)",
+    "anchor": "start",
+    "fontSize": 18,
+    "fontWeight": "bold"
+  },
+  "width": 820,
+  "height": 420,
+  "data": { "url": "data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+  "transform": [
+    { "calculate": "toNumber(datum.Pax_annual)", "as": "total" },
+    { "window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "total", "order": "descending"}] },
+    { "filter": "datum.rank <= 10" },
+    { "fold": ["Pax_AM_peak", "Pax_PM_peak"], "as": ["Period_raw", "Passengers"] },
+    {
+      "calculate": "indexof(lower(trim(datum.Period_raw)), 'am') >= 0 ? 'AM Peak' : 'PM Peak'",
+      "as": "Period"
+    },
+    { "calculate": "toNumber(datum.Passengers)", "as": "Passengers_num" }
+  ],
+  "mark": { "type": "bar", "cornerRadiusEnd": 2, "size": 24 },
+  "encoding": {
+    "x": {
+      "field": "Stop_name",
+      "type": "nominal",
+      "title": "Station",
+      "sort": {"field": "total", "order": "descending"},
+      "axis": { "labelAngle": -30 }
+    },
+    "y": {
+      "field": "Passengers_num",
+      "type": "quantitative",
+      "title": "Passengers",
+      "axis": { "format": "~s" },
+      "stack": null
+    },
+    "color": {
+      "field": "Period",
+      "type": "nominal",
+      "title": "Peak Period",
+      "scale": { "domain": ["AM Peak", "PM Peak"], "range": ["#3288bd", "#d53e4f"] },
+      "legend": {
+        "orient": "none",
+        "legendX": 650,
+        "legendY": 20,
+        "direction": "horizontal",
+        "title": "Peak Period",
+        "labelFontSize": 14,
+        "titleFontSize": 14,
+        "symbolType": "circle",
+        "fillColor": "#ffffffcc",
+        "strokeColor": "#ddd",
+        "cornerRadius": 4,
+        "padding": 5
+      }
+    },
+    "xOffset": { "field": "Period" },
+    "tooltip": [
+      { "field": "Stop_name", "title": "Station" },
+      { "field": "Period", "title": "Period" },
+      { "field": "Passengers_num", "title": "Passengers", "format": "," }
+    ]
+  },
+  "config": {
+    "axis": { "labelFontSize": 11, "titleFontSize": 12 },
+    "view": { "stroke": "transparent" }
+  }
+}
