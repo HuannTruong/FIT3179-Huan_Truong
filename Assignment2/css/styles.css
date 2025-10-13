@@ -1,4 +1,3 @@
-/* 🌐 Global Page Setup */
 body {
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: #f8f9fa;
@@ -7,7 +6,6 @@ body {
   color: #222;
 }
 
-/* 🧭 Headings */
 h1, h2 {
   font-weight: 700;
   color: #111;
@@ -27,7 +25,6 @@ h2 {
   font-size: 1.4rem;
 }
 
-/* 🧩 Visualisation Cards */
 .vis {
   background: white;
   border-radius: 12px;
@@ -41,7 +38,6 @@ h2 {
   box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
 
-/* 🧾 Error Messages */
 .err {
   display: none;
   margin-top: -15px;
@@ -54,7 +50,6 @@ h2 {
   font-size: 0.9rem;
 }
 
-/* 🧭 Header */
 header {
   text-align: center;
   margin-bottom: 40px;
@@ -72,7 +67,6 @@ header p {
   margin-top: 8px;
 }
 
-/* 🦶 Footer */
 footer {
   text-align: center;
   margin-top: 60px;
@@ -80,7 +74,6 @@ footer {
   color: #888;
 }
 
-/* 📱 Responsive */
 @media (max-width: 900px) {
   body { padding: 22px 20px; }
   header h1 { font-size: 1.8rem; }
