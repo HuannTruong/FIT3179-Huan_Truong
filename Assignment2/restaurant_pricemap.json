@@ -26,7 +26,7 @@
   "layer": [
     {
       "data": {
-        "url": "output.json",
+        "url": "data/output.json",
         "format": { "type": "topojson", "feature": "vic_localities" }
       },
       "mark": {
