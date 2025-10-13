@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Distance of Restaurants from Nearest Train Station",
+    "subtitle": "250 m bins; line shows cumulative %",
+    "anchor": "start",
+    "fontSize": 18,
+    "fontWeight": "bold"
+  },
+  "width": 820,
+  "height": 420,
+  "data": { "url": "./data/restaurants_with_nearest_station.csv" },
+
+  "transform": [
+    { "calculate": "toNumber(datum.distance_to_station_km)", "as": "dist_km" },
+    { "filter": "isFinite(datum.dist_km) && datum.dist_km >= 0" }
+  ],
+
+  "layer": [
+    {
+      "mark": { "type": "bar", "cornerRadiusEnd": 1 },
+      "encoding": {
+        "x": {
+          "field": "dist_km",
+          "type": "quantitative",
+          "bin": { "step": 0.25 },
+          "title": "Distance to nearest station (km)"
+        },
+        "y": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "title": "Number of restaurants"
+        },
+        "color": { "value": "#8da0cb" },
+        "tooltip": [
+          { "aggregate": "count", "title": "Count" },
+          { "field": "dist_km", "bin": { "step": 0.25 }, "title": "Bin (km)" }
+        ]
+      }
+    },
+
+    {
+      "transform": [
+        { "bin": { "step": 0.25 }, "field": "dist_km", "as": ["b0","b1"] },
+        { "aggregate": [{ "op": "count", "as": "n" }], "groupby": ["b0","b1"] },
+        { "window": [{ "op": "sum", "field": "n", "as": "cumN" }], "sort": [{ "field": "b0", "order": "ascending" }] },
+        { "joinaggregate": [{ "op": "sum", "field": "n", "as": "totalN" }] },
+        { "calculate": "datum.cumN / datum.totalN", "as": "cumFrac" },
+        { "calculate": "(datum.b0 + datum.b1)/2", "as": "mid" }
+      ],
+      "mark": { "type": "line", "stroke": "#d53e4f", "strokeWidth": 2 },
+      "encoding": {
+        "x": { "field": "mid", "type": "quantitative", "title": null },
+        "y": {
+          "field": "cumFrac",
+          "type": "quantitative",
+          "axis": { "title": "Cumulative %", "format": ".0%", "orient": "right", "grid": false },
+          "scale": { "domain": [0, 1] }
+        },
+        "tooltip": [
+          { "field": "cumFrac", "title": "Cumulative", "format": ".0%" }
+        ]
+      }
+    }
+  ],
+
+  "resolve": { "scale": { "y": "independent" } },
+  "config": {
+    "view": { "stroke": null },
+    "axis": { "labelFontSize": 11, "titleFontSize": 12 }
+  }
+}
