@@ -1,0 +1,501 @@
+name,rating,priceLevel,numberOfReviews,address,rest_lat,rest_long,nearest_station_id,nearest_station_name,distance_to_station_km,distance_band
+Hopetoun Tea Rooms est. 1892,4.5,$$ - $$$,2311,"421 Bourke St Hopetoun Tea Rooms, Melbourne, Victoria 3000 Australia",-37.814921013925,144.961636003555,19842,Melbourne Central,0.56,500–1000 m
+Da Guido La Pasta,4.5,$$ - $$$,1095,"130 Lygon St Carlton, Melbourne, Victoria 3053 Australia",-37.804031496776,144.966627259258,19842,Melbourne Central,0.746,500–1000 m
+Foglia di Fico,5,$$ - $$$,202,"585 La Trobe St (Spencer St entrance), Melbourne, Victoria 3000 Australia",-37.813278077083,144.951826829906,19841,Flagstaff,0.366,250–500 m
+Pidapipo Gelateria,4.5,$,433,"299 Lygon St, Carlton, Melbourne, Victoria 3053 Australia",-37.798379621375,144.967066219527,19842,Melbourne Central,1.344,>1000 m
+Kazuki's,4.5,$$$$,500,"121 Lygon St Carlton, Melbourne, Victoria 3053 Australia",-37.804156973867,144.966067348125,19842,Melbourne Central,0.712,500–1000 m
+Hochi Mama,4.5,$$ - $$$,1469,"35 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.81075231629,144.971736196881,19843,Parliament,0.109,<=250 m
+Sezar,4.5,$$ - $$$,1024,"6 Melbourne Pl, Melbourne, Victoria 3000 Australia",-37.813511932182,144.969085671459,19843,Parliament,0.433,250–500 m
+The French Brasserie,4.5,$$$$,721,"2 Malthouse Lane, Melbourne, Victoria 3000 Australia",-37.815421958368,144.971824290683,19843,Parliament,0.495,250–500 m
+The Railway Club Hotel Steakhouse,4.5,$$ - $$$,680,"107 Raglan St Port Melbourne, Melbourne, Victoria 3207 Australia",-37.833805986603,144.944299964674,22180,Southern Cross,1.872,>1000 m
+Bistrot d'Orsay,4.5,$$ - $$$,497,"184 Collins St, Melbourne, Victoria 3000 Australia",-37.815038570117,144.967359083224,19854,Flinders Street,0.365,250–500 m
+Da Guido 365,4.5,$$ - $$$,524,"365 Little Collins St, Melbourne, Victoria 3000 Australia",-37.815629787657,144.962729841919,19854,Flinders Street,0.476,250–500 m
+Roule Galette Melbourne,4.5,$,604,"241 Flinders Lane Shop 1, Melbourne, Victoria 3000 Australia",-37.816794997927,144.966265747774,19854,Flinders Street,0.179,<=250 m
+Eau De Vie,4.5,$$ - $$$,814,"1 Malthouse Lane, Melbourne, Victoria 3000 Australia",-37.815613736313,144.971554309582,19854,Flinders Street,0.502,500–1000 m
+Tipo 00,4.5,$$ - $$$,823,"361 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.8135943682,144.961982343794,19842,Melbourne Central,0.41,250–500 m
+Ruyi Modern Chinese,4.5,$$ - $$$,377,"16 Liverpool St, Melbourne, Victoria 3000 Australia",-37.811106284061,144.971469903817,19843,Parliament,0.127,<=250 m
+David's Master Pot (Elizabeth St - CBD),5,$$ - $$$,140,"462 Elizabeth St, Melbourne, Victoria 3000 Australia",-37.80787392883,144.960512996167,19842,Melbourne Central,0.293,250–500 m
+Longrain,4.5,$$ - $$$,1172,"44 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.810647500591,144.971209645724,19843,Parliament,0.156,<=250 m
+Straight Outta Saigon,4.5,$$ - $$$,337,"138 Russell Street Ground level, Melbourne, Victoria 3000 Australia",-37.812947830098,144.968404641826,19843,Parliament,0.448,250–500 m
+Patricia Coffee Brewers,4.5,$,212,"493-495 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.814691433597,144.958235381617,19841,Flagstaff,0.377,250–500 m
+Coda,4.5,$$$$,1150,"141 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.815757611681,144.969861165141,19854,Flinders Street,0.381,250–500 m
+Bowery to Williamsburg,4.5,$$ - $$$,322,"16 Oliver Lane, Melbourne, Victoria 3000 Australia",-37.8161584762,144.970261736293,19854,Flinders Street,0.375,250–500 m
+Rare Steakhouse Midtown,4.5,$$ - $$$,344,"12 Goldie Pl, Melbourne, Victoria 3000 Australia",-37.813392783428,144.960781636164,19842,Melbourne Central,0.416,250–500 m
+Seven Seeds,4.5,$$ - $$$,381,"114 Berkley Street Carlton, Melbourne, Victoria Australia",-37.802892396135,144.959128305763,19842,Melbourne Central,0.841,500–1000 m
+Betty’s Burgers & Concrete Co,4.5,$,1215,"97 Elizabeth St, Melbourne, Victoria 3000 Australia",-37.815917035479,144.963640954794,19854,Flinders Street,0.395,250–500 m
+seamstress,4.5,$$ - $$$,501,"113 Lonsdale St, Melbourne, Victoria 3000 Australia",-37.810542014339,144.96899296761,19843,Parliament,0.349,250–500 m
+Laksa King,4.5,$,557,"6-12 Pin Oak Cres Flemington, Melbourne, Victoria 3031 Australia",-37.787885143323,144.929551838399,20040,Newmarket,0.08,<=250 m
+Sud Food and Wine,4.5,$$ - $$$,230,"219 King St, Melbourne, Victoria 3000 Australia",-37.815137686122,144.95487197533,19841,Flagstaff,0.358,250–500 m
+11 Inch Pizza,4.5,$,324,"Shop 7A 353 Little Collins St, Melbourne, Victoria 3000 Australia",-37.815566127103,144.962963026465,19854,Flinders Street,0.465,250–500 m
+Operator 25,4.5,$$ - $$$,447,"25 Wills St, Melbourne, Victoria 3000 Australia",-37.810742593282,144.956996955423,19841,Flagstaff,0.181,<=250 m
+Koko Black Chocolate,4.5,$$ - $$$,558,"52 Collins St, Melbourne, Victoria 3000 Australia",-37.813710499468,144.971906517154,19843,Parliament,0.308,250–500 m
+Auction Rooms,4.5,$$ - $$$,432,"103-107 Errol St, Melbourne, Victoria 3051 Australia",-37.802489771416,144.949439915339,19973,North Melbourne,0.816,500–1000 m
+Tonka,4.5,$$$$,817,"20 Duckboard Pl, Melbourne, Victoria 3000 Australia",-37.816047793169,144.971534444472,19854,Flinders Street,0.473,250–500 m
+Il Solito Posto,4.5,$$ - $$$,989,"113 Collins St via George Parade, Melbourne, Victoria 3000 Australia",-37.81463229927,144.970230052699,19843,Parliament,0.462,250–500 m
+Geppetto Trattoria,4.5,$$ - $$$,439,"78A Wellington Pde, Melbourne, Victoria 3002 Australia",-37.816418985751,144.987415971694,19979,Jolimont,0.292,250–500 m
+Scopri,5,$$ - $$$,1049,"191 Nicholson St Carlton, Melbourne, Victoria 3053 Australia",-37.795694981607,144.974998014502,19843,Parliament,1.718,>1000 m
+Railway Hotel,4.5,$$ - $$$,267,"280 Ferrars St, Melbourne, Victoria 3205 Australia",-37.835454665048,144.955651743783,22180,Southern Cross,1.983,>1000 m
+Afternoon Tea at The Hotel Windsor,4.5,$$$$,1508,"111 Spring Street The Hotel Windsor, Melbourne, Victoria 3000 Australia",-37.811973224306,144.973031871474,19843,Parliament,0.103,<=250 m
+Piccolo Mondo,4.5,$$ - $$$,735,"240 Lygon St Carlton, Melbourne, Victoria 3053 Australia",-37.801560008806,144.967058005262,19842,Melbourne Central,1.011,>1000 m
+1932 Cafe & Restaurant,4.5,$$ - $$$,443,"220 Collins St Manchester Unity Building, Melbourne, Victoria 3000 Australia",-37.815376612272,144.966174217391,19854,Flinders Street,0.333,250–500 m
++39 Pizzeria,4.5,$$ - $$$,1232,"362 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.813401835884,144.961808335484,19842,Melbourne Central,0.391,250–500 m
+Red Spice Road,4.5,$$ - $$$,1737,"141 Queen St, Melbourne, Victoria 3000 Australia",-37.815479122948,144.96062615186,19841,Flagstaff,0.585,500–1000 m
+Straits Cafe Melbourne,4.5,$$ - $$$,262,"Rendezvous Hotel Melbourne 328 Flinders St, Melbourne, Victoria 3000 Australia",-37.818344979462,144.963646989764,19854,Flinders Street,0.291,250–500 m
+Om Nom,4,$$$$,545,"187 Flinders Lane Adelphi Hotel, Melbourne, Victoria 3000 Australia",-37.81622687253,144.968293833066,19854,Flinders Street,0.259,250–500 m
+MoVida Aqui,4.5,$$ - $$$,752,"Nab Building, 1 500 Bourke St NAB Building, Melbourne, Victoria 3000 Australia",-37.815262744117,144.958935354352,19841,Flagstaff,0.465,250–500 m
+Cicciolina,4.5,$$ - $$$,375,"130 Acland St, Melbourne, Victoria 3182 Australia",-37.868483344963,144.980008548582,19956,Balaclava,1.191,>1000 m
+Movida Bar de Tapas,4.5,$$ - $$$,2760,"1 Hosier Lane, Melbourne, Victoria 3000 Australia",-37.816755561073,144.969114086111,19854,Flinders Street,0.256,250–500 m
+The Sherlock Holmes,4.5,$$ - $$$,344,"415 Collins St, Melbourne, Victoria 3000 Australia",-37.817367649552,144.960819941461,19854,Flinders Street,0.55,500–1000 m
+Rare Steakhouse Downtown,4.5,$$ - $$$,516,"42-44 King St, Melbourne, Victoria 3000 Australia",-37.819191425955,144.957294680624,22180,Southern Cross,0.535,500–1000 m
+Rice Paper Scissors,4.5,$$ - $$$,2701,"15 Hardware Lane, Melbourne, Victoria 3000 Australia",-37.814313786949,144.961403741018,19842,Melbourne Central,0.498,250–500 m
+Ganache Chocolate,4.5,$$ - $$$,260,"245 Collins St, Melbourne, Victoria 3000 Australia",-37.815992849793,144.96578823075,19854,Flinders Street,0.277,250–500 m
+Flower Drum,4.5,$$$$,1367,"17 Market Lane, Melbourne, Victoria 3000 Australia",-37.812293934721,144.969426623303,19843,Parliament,0.336,250–500 m
+Rare Steakhouse Uptown,4.5,$$ - $$$,755,"61 Little Collins St Shop 6, Melbourne, Victoria 3000 Australia",-37.812995397399,144.971686240738,19843,Parliament,0.241,<=250 m
+Manchester Press,4.5,$$ - $$$,500,"8 Rankins Lane, Melbourne, Victoria 3000 Australia",-37.813902989875,144.962142102868,19842,Melbourne Central,0.443,250–500 m
+Caterina's Cucina E Bar,5,$$ - $$$,111,"221 Queen St, Melbourne, Victoria 3000 Australia",-37.813555266621,144.959754853025,19841,Flagstaff,0.401,250–500 m
+Delhi Streets Indian Street Food,4.5,$,262,"22 Katherine Pl, Melbourne, Victoria 3000 Australia",-37.819941438651,144.956612728982,22180,Southern Cross,0.508,500–1000 m
+Amiconi,4.5,$$ - $$$,181,"359 Victoria St Locality is West Melbourne, Melbourne, Victoria 3003 Australia",-37.805376121684,144.949587185378,19973,North Melbourne,0.717,500–1000 m
+La Luna Bistro,4.5,$$ - $$$,384,"320 Rathdowne St Carlton, North, Melbourne, Victoria 3054 Australia",-37.791080995366,144.971853962621,20019,Rushall,2.007,>1000 m
+pastuso,4.5,$$ - $$$,857,"19 Acdc Lane Off Flinders Lane Between Collins St and Exhibition St, Melbourne, Victoria 3000 Australia",-37.814016187477,144.971370662084,19843,Parliament,0.356,250–500 m
+Brunetti Classico - Carlton,4.5,$$ - $$$,3247,"380 Lygon St 380 Lygon St, Carlton Vic, Melbourne, Victoria 3053 Australia",-37.798037472087,144.967666782889,19842,Melbourne Central,1.396,>1000 m
+Lucy Liu Kitchen and Bar,4.5,$$ - $$$,1195,"23 Oliver Lane, Melbourne, Victoria 3000 Australia",-37.816018372688,144.969859404941,19854,Flinders Street,0.36,250–500 m
+Max Bar Restaurant,4,$$ - $$$,1405,"54 - 58 Hardware Lane, Melbourne, Victoria 3000 Australia",-37.813373840327,144.961247921438,19842,Melbourne Central,0.4,250–500 m
+San Telmo,4.5,$$ - $$$,709,"14 Meyers Pl, Melbourne, Victoria 3000 Australia",-37.81224211576,144.972422423294,19843,Parliament,0.139,<=250 m
+Bamboo House Chinese Restaurant,4.5,$$ - $$$,405,"47 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.811056830832,144.97108525828,19843,Parliament,0.16,<=250 m
+Vue De Monde,4.5,$$$$,2035,"525 Collins St Rialto Building 55th Floor, Melbourne, Victoria 3000 Australia",-37.8185477377,144.956990668996,22180,Southern Cross,0.495,250–500 m
+Il Bacaro Cucina e Bar,4.5,$$$$,504,"68-170 Little Collins St 168-170 Little Collins St, Melbourne, Victoria 3000 Australia",-37.813858523878,144.967909858081,19854,Flinders Street,0.501,500–1000 m
+Grand Trailer Park Taverna,4.5,$$ - $$$,296,"87 Bourke St, Melbourne, Victoria 3000 Australia",-37.812161942856,144.970905131181,19843,Parliament,0.215,<=250 m
+B'Churrasco Brazilian BBQ,4.5,$$ - $$$,557,"61 A'Beckett St, Melbourne, Victoria 3000 Australia",-37.809172578998,144.961739352421,19842,Melbourne Central,0.114,<=250 m
+The Hardware Societe,4.5,$$ - $$$,1879,"10 Katherine Pl, Melbourne, Victoria 3000 Australia",-37.819941438651,144.956612728982,22180,Southern Cross,0.508,500–1000 m
+Supernormal,4.5,$$ - $$$,1619,"180 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.815230264242,144.968178498078,19854,Flinders Street,0.358,250–500 m
+Embla,4.5,$$ - $$$,266,"122 Russell St, Melbourne, Victoria 3000 Australia",-37.813423042099,144.968663642634,19843,Parliament,0.457,250–500 m
+Cucinetta,4.5,$$ - $$$,401,"U 4 3 Murphy St South Yarra, Melbourne, Victoria 3141 Australia",-37.83830597896,144.990119973659,19959,South Yarra,0.196,<=250 m
+Chocolate Buddha,4.5,$$ - $$$,717,"Cnr. Flinders & Swanston Street Federation Square, Melbourne, Victoria 3000 Australia",-37.818213341673,144.968058972139,19854,Flinders Street,0.097,<=250 m
+The Grain Store,4.5,$$ - $$$,1248,"Ground Floor 517 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.819767849436,144.956465375124,22180,Southern Cross,0.488,250–500 m
+Cargo Restaurant,4.5,$$ - $$$,696,"Docklands Melbourne, Melbourne, Victoria 3008 Australia",-37.815069708887,144.936424160812,19973,North Melbourne,1.072,>1000 m
+Cecconi's Flinders Lane,4.5,$$$$,539,"61 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.814985386941,144.972503057203,19843,Parliament,0.439,250–500 m
+MoVida Next Door,4.5,$$ - $$$,528,"164 Flinders St, Melbourne, Victoria 3000 Australia",-37.816755561073,144.969114086111,19854,Flinders Street,0.256,250–500 m
+Punch Lane,4.5,$$ - $$$,667,"43 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.810880601318,144.971335122814,19843,Parliament,0.14,<=250 m
+DOC Pizza & Mozzarella Bar,4.5,$$ - $$$,672,"295 Drummond St, Melbourne, Victoria 3053 Australia",-37.798980603832,144.968469350118,19842,Melbourne Central,1.323,>1000 m
+Kenzan Japanese Restaurant,4.5,$$ - $$$,278,"56 Flinders Lane At Collins Place, Melbourne, Victoria 3000 Australia",-37.814422311641,144.973437597497,19843,Parliament,0.377,250–500 m
+Seasons Provedore,4.5,$$ - $$$,494,"199 Lygon St, Melbourne, Victoria 3053 Australia",-37.800966989156,144.966653997529,19842,Melbourne Central,1.059,>1000 m
+1806,4.5,$$ - $$$,259,"169 Exhibition St, Melbourne, Victoria 3000 Australia",-37.811643689783,144.970093595316,19843,Parliament,0.256,250–500 m
+The Meat & Wine Co Southbank,4,$$ - $$$,1478,"3 Freshwater Pl 3 Queensbridge Street, Melbourne, Victoria 3006 Australia",-37.821534209802,144.962471427844,19854,Flinders Street,0.534,500–1000 m
+Philippe,4.5,$$$$,261,"115 Collins St, Melbourne, Victoria 3000 Australia",-37.814731918189,144.969957473208,19854,Flinders Street,0.476,250–500 m
+The Quarter,4,$$ - $$$,745,"27 Degraves St, Melbourne, Victoria 3000 Australia",-37.817042725076,144.965478351789,19854,Flinders Street,0.192,<=250 m
+Cookie,4,$$ - $$$,1050,"U 1 252 Swanston St Level 1, 252 Swanston St, Melbourne, Victoria 3000 Australia",-37.81199279605,144.965206107574,19842,Melbourne Central,0.324,250–500 m
+P.J.O'Brien's Irish Pub,4,$$ - $$$,544,"Southgate Southgate Restaurant & Shopping Precinct, Melbourne, Victoria 3006 Australia",-37.820228854111,144.966524161848,19854,Flinders Street,0.217,<=250 m
+The  European,4,$$ - $$$,951,"161 Spring St, Melbourne, Victoria 3000 Australia",-37.810884079808,144.972584529301,19843,Parliament,0.034,<=250 m
+Rosco's at Chevron Cafe Bar,4.5,$$ - $$$,262,"14/519 St Kilda Rd, Melbourne, Victoria 3004 Australia",-37.845580213631,144.979401279697,19958,Prahran,1.017,>1000 m
+Hakata Gensuke Ramen,4.5,$,369,"168 Russell St, Melbourne, Victoria 3000 Australia",-37.812288132409,144.968139522228,19843,Parliament,0.441,250–500 m
+Taxi Kitchen,4.5,$$ - $$$,953,"Level 1, Federation Square, Flinders Street Transport Hotel, Melbourne, Victoria 3000 Australia",-37.818263297816,144.969184158821,19854,Flinders Street,0.195,<=250 m
+Bomba,4.5,$$ - $$$,457,"103 Lonsdale St, Melbourne, Victoria 3000 Australia",-37.81045534546,144.969243083601,19843,Parliament,0.329,250–500 m
+Cumulus Inc.,4.5,$$ - $$$,2123,"45 Flinders La, Melbourne, Victoria 3000 Australia",-37.814830782737,144.973078642494,19843,Parliament,0.42,250–500 m
+Gingerboy,4.5,$$ - $$$,990,"27-29 Crossley St, Melbourne, Victoria 3000 Australia",-37.811230084771,144.970902868067,19843,Parliament,0.177,<=250 m
+Grill Steak Seafood,4.5,$$ - $$$,1479,"68 - 78 Hardware Lane, Melbourne, Victoria 3000 Australia",-37.813028422097,144.961075673327,19842,Melbourne Central,0.369,250–500 m
+Milk the Cow,4.5,$$ - $$$,338,"U 1 157 Fitzroy St, St Kilda, Port Phillip, Victoria 3182 Australia",-37.858843653397,144.979460120657,19957,Windsor,1.147,>1000 m
+Berth,4,$$ - $$$,568,"45 New Quay Promenade Docklands, Melbourne, Victoria 3008 Australia",-37.81510407469,144.941816071487,22180,Southern Cross,0.9,500–1000 m
+Carlton Wine Room,4.5,$$ - $$$,205,"172-174 Faraday Street Carlton, Melbourne, Victoria Australia",-37.79860425638,144.968593234647,19842,Melbourne Central,1.366,>1000 m
+Mamasita,4,$$ - $$$,1307,"11 Collins St, Melbourne, Victoria 3000 Australia",-37.813710122282,144.973416014096,19843,Parliament,0.299,250–500 m
+The Meatball and Wine Bar,4,$$ - $$$,699,"135 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.815681252543,144.970135923927,19854,Flinders Street,0.403,250–500 m
+A Hereford Beefstouw,4.5,$$ - $$$,199,"22 Duckboard Pl, Melbourne, Victoria 3000 Australia",-37.816073148426,144.971431514701,19854,Flinders Street,0.464,250–500 m
+Cafe Rosco,4.5,$$ - $$$,232,"407D St Kilda Rd, Melbourne, Victoria 3004 Australia",-37.836278941406,144.97622998663,19959,South Yarra,1.435,>1000 m
+BangPop,4,$$ - $$$,559,"35 South Wharf Promenade Off Dukes Walk, South Wharf, Melbourne, Victoria 3006 Australia",-37.82400498531,144.948477924312,22180,Southern Cross,0.722,500–1000 m
+Caffe e Cucina,4,$$ - $$$,490,"581 Chapel St South Yarra, Melbourne, Victoria 3141 Australia",-37.840209006257,144.995257996486,19959,South Yarra,0.322,250–500 m
+Melba Restaurant,4,$$$$,1306,"1 Southgate Ave The Langham, Southbank, Melbourne, Victoria 3006 Australia",-37.820454243487,144.965701729509,19854,Flinders Street,0.263,250–500 m
+Chokolait Hub,4.5,$$ - $$$,410,"287 Lonsdale St Shop 342, Level 3, Emporium, Melbourne, Victoria 3000 Australia",-37.812085793266,144.963701807411,19842,Melbourne Central,0.258,250–500 m
+Waterfront,4,$$$$,1525,"Southgate Avenue Shop 20/3, Melbourne, Victoria 3006 Australia",-37.819853734885,144.966898576806,19854,Flinders Street,0.172,<=250 m
+HQ's On William,4.5,$$ - $$$,306,"380 William St Radisson on Flagstaff Gardens, Melbourne, Victoria 3000 Australia",-37.810354636894,144.956037646605,19841,Flagstaff,0.184,<=250 m
+Bottega,4,$$$$,405,"74 Bourke St, Melbourne, Victoria 3000 Australia",-37.811739997851,144.971027004053,19843,Parliament,0.182,<=250 m
+Shanghai Street,4,$,595,"342 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.813121880318,144.962367492245,19842,Melbourne Central,0.355,250–500 m
+Lupino Bistro and Bar,4.5,$$ - $$$,416,"41 Little Collins St, Melbourne, Victoria 3000 Australia",-37.812789998861,144.972392332262,19843,Parliament,0.198,<=250 m
+Mamak,4,$,514,"366 Lonsdale St, Melbourne, Victoria 3000 Australia",-37.812269776041,144.961583868117,19842,Melbourne Central,0.274,250–500 m
+Donovans,4.5,$$$$,1022,"40 Jacka Boulevard, St Kilda, Port Phillip, Victoria 3182 Australia",-37.866664010969,144.973989000998,19956,Balaclava,1.742,>1000 m
+Brick Lane Melbourne,4.5,$$ - $$$,208,"33 Guildford Lane, Melbourne, Victoria 3000 Australia",-37.811448056163,144.959846886322,19842,Melbourne Central,0.294,250–500 m
+No35,4,$$$$,929,"35/25 Collins St Level 35, Melbourne, Victoria 3000 Australia",-37.813892847772,144.973029775998,19843,Parliament,0.316,250–500 m
+La Camera Restaurant Southgate,4,$$ - $$$,1148,"Shop MR2, Mid-level, Southgate Southbank, Melbourne, Victoria 3006 Australia",-37.821259325287,144.966516869593,19854,Flinders Street,0.331,250–500 m
+Brother Baba Budan,4.5,$,440,"359 Little Bourke St Cbd, Melbourne, Victoria 3000 Australia",-37.813548309642,144.962195244134,19842,Melbourne Central,0.403,250–500 m
+Japanese Teppanyaki Inn,4.5,$$$$,219,"182 Collins St, Melbourne, Victoria 3000 Australia",-37.814973652277,144.967492606941,19854,Flinders Street,0.373,250–500 m
+Rosa's Canteen,4.5,$$ - $$$,154,"Cnr Little Bourke & Thomson St Level 1, Melbourne, Victoria 3000 Australia",-37.81440980165,144.958760759308,19841,Flagstaff,0.384,250–500 m
+Two Birds One Stone,4.5,$$ - $$$,366,"12 Claremont St, Melbourne, Victoria 3141 Australia",-37.837978078908,144.993940612764,19959,South Yarra,0.15,<=250 m
+Red Emperor Chinese Restaurant,4,$$ - $$$,534,"3 Southgate Ave M10/ Mid Level, Melbourne, Victoria 3006 Australia",-37.820228854111,144.966524161848,19854,Flinders Street,0.217,<=250 m
+Squires Loft South Yarra,4.5,$$ - $$$,383,"166 Toorak Rd, Melbourne, Victoria 3141 Australia",-37.839463687427,144.992541254029,19959,South Yarra,0.114,<=250 m
+Grossi  Florentino,4,$$$$,1262,"80 Bourke St, Melbourne, Victoria 3000 Australia",-37.811782536009,144.970856097048,19843,Parliament,0.198,<=250 m
+Epocha,4.5,$$$$,254,"49 Rathdowne St Carlton South, Melbourne, Victoria 3053 Australia",-37.80593565563,144.968791047562,19843,Parliament,0.674,500–1000 m
+Magic Mountain Saloon,4,$$ - $$$,289,"62 Little Collins St, Melbourne, Victoria 3000 Australia",-37.812819964165,144.97144107007,19843,Parliament,0.235,<=250 m
+The Bank on Collins,4,$$ - $$$,393,"394 Collins St, Melbourne, Victoria 3000 Australia",-37.81681897017,144.961183464602,19854,Flinders Street,0.534,500–1000 m
+Ponyfish Island,4,$$ - $$$,479,"Underneath Evan Walker Pedestrian Bridge Southbank, Melbourne, Victoria 3006 Australia",-37.8205964,144.9651223,19854,Flinders Street,0.302,250–500 m
+IL Dolce Freddo,4.5,$,175,"116 Lygon Street, Carlton, Melbourne, Victoria 3053 Australia",-37.804330982177,144.966580991152,19842,Melbourne Central,0.715,500–1000 m
+Osteria Ilaria,4.5,$$ - $$$,248,"367 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.813607485878,144.961906822846,19842,Melbourne Central,0.412,250–500 m
+Juicy Bao,4.5,$,365,"178-190 Little Bourke St Shop 2, Melbourne, Victoria 3000 Australia",-37.81190453461,144.966956584233,19842,Melbourne Central,0.441,250–500 m
+Fitzrovia,4.5,$$ - $$$,732,"155 Fitzroy St, St Kilda, Port Phillip, Victoria 3182 Australia",-37.858998257601,144.979202628592,19957,Windsor,1.173,>1000 m
+Trattoria Emilia,4.5,$$ - $$$,261,"360 Little Collins St Little Collins Street, Melbourne, Victoria 3000 Australia",-37.815381264228,144.962680807785,19854,Flinders Street,0.497,250–500 m
+Maha,4.5,$$$$,1702,"21 Bond St, Melbourne, Victoria 3000 Australia",-37.818214808506,144.96245357439,19854,Flinders Street,0.396,250–500 m
+Tiamo,4,$$ - $$$,726,"303 Lygon St Carlton, Melbourne, Victoria 3053 Australia",-37.798225981089,144.967093041617,19842,Melbourne Central,1.361,>1000 m
+Vivace,4.5,$$ - $$$,408,"317 Bay St, Brighton, Bayside, Victoria 3186 Australia",-37.905414806635,145.003020979931,19952,North Brighton,0.069,<=250 m
+Conservatory,4,$$$$,1129,"Crown Entertainment Complex 8 Whiteman St 8 Whiteman St, Southbank, Melbourne, Victoria 3006 Australia",-37.824313397437,144.956855720355,22180,Southern Cross,0.855,500–1000 m
+Dukes Coffee Roasters,4.5,$,182,"247 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.816866327923,144.966103138852,19854,Flinders Street,0.177,<=250 m
+Trunk,4,$$ - $$$,769,"275 Exhibition St, Melbourne, Victoria 3000 Australia",-37.809354005293,144.969036972601,19843,Parliament,0.389,250–500 m
+Becco,4.5,$$$$,378,"11-25 Crossley St, Melbourne, Victoria 3000 Australia",-37.811422281811,144.970990291317,19843,Parliament,0.174,<=250 m
+Sally's Kitchen and Winebar,4.5,$$ - $$$,232,"115 Little Lonsdale St, Melbourne, Victoria 3000 Australia",-37.809470765204,144.96854277559,19843,Parliament,0.422,250–500 m
+Higher Ground,4,$$ - $$$,713,"650 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.815583729099,144.953074224737,22180,Southern Cross,0.3,250–500 m
+The Recreation bistro x bottleshop,4.5,$$ - $$$,109,"162-170 Queens Parade, Fitzroy North, Melbourne, Victoria 3068 Australia",-37.790610980145,144.985215470654,19974,Clifton Hill,0.922,500–1000 m
+Pellegrini's Espresso Bar,4,$,1067,"66 Bourke St, Melbourne, Victoria 3000 Australia",-37.811696998687,144.971176034292,19843,Parliament,0.168,<=250 m
+DoDee Paidang Thai Bar and Cafe,4.5,$,185,"353 Little Collins St, Melbourne, Victoria 3000 Australia",-37.815566127103,144.962963026465,19854,Flinders Street,0.465,250–500 m
+Ca de Vin,4,$$ - $$$,523,"350 Bourke St Melbourne GPO, Melbourne, Victoria 3000 Australia",-37.813927967946,144.963503240125,19842,Melbourne Central,0.451,250–500 m
+Terra Rossa Restaurant & Bar,4,$$ - $$$,458,"87 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.815318986687,144.97133897849,19843,Parliament,0.494,250–500 m
+Noir,4.5,$$$$,234,"175 Swan St, Richmond, Yarra, Victoria 3121 Australia",-37.825456898578,144.997516500297,19907,East Richmond,0.112,<=250 m
+Bistro Thierry,4.5,$$$$,540,"511 Malvern Rd, Toorak, Stonnington, Victoria 3142 Australia",-37.847974630002,145.00351450639,19947,Hawksburn,0.395,250–500 m
+Bouzy Rouge,4.5,$$ - $$$,358,"470 Bridge Rd, Richmond, Yarra, Victoria 3121 Australia",-37.8196029774,145.007164992861,19906,Burnley,0.885,500–1000 m
+Sake Restaurant & Bar,4,$$ - $$$,725,"100 St Kilda Rd Hamer Hall, Arts Centre, Melbourne, Victoria 3004 Australia",-37.821407307788,144.96877478667,19854,Flinders Street,0.38,250–500 m
+Ginger Olive Restaurant and Grill,5,$$ - $$$,80,"U 2 38 Manchester Lane Corner Manchester Lane and Flinders Lane, Melbourne, Victoria 3000 Australia",-37.81671080171,144.966178911257,19854,Flinders Street,0.19,<=250 m
+Mercadante Woodfired Pizzeria,4.5,$$ - $$$,365,"Shop 123, Lygon St Carlton, Melbourne, Victoria 3053 Australia",-37.804090463465,144.96607908279,19842,Melbourne Central,0.719,500–1000 m
+Palermo,4.5,$$ - $$$,143,"401 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.81390081058,144.960993530676,19842,Melbourne Central,0.462,250–500 m
+France Soir,4,$$$$,654,"11 Toorak Rd South Yarra, Melbourne, Victoria 3141 Australia",-37.838204390294,144.986910878209,19959,South Yarra,0.478,250–500 m
+Blondie Bar,4,$$ - $$$,258,"Corner Sturt Street & Southbank Boulevard, Southbank Melbourne Recital Centre, Melbourne, Victoria 3006 Australia",-37.823465106927,144.967284819562,19854,Flinders Street,0.574,500–1000 m
+Ciao Cielo,4.5,$$ - $$$,268,"115 Bay St, Melbourne, Victoria 3207 Australia",-37.840345002636,144.940398943117,22180,Southern Cross,2.673,>1000 m
+Madame Brussels,4,$$ - $$$,461,"59-63 Bourke St Level 3, Above Spaghetti Tree Restaurant!, Melbourne, Victoria 3000 Australia",-37.81201966005,144.971517932122,19843,Parliament,0.163,<=250 m
+Pure South Dining,4,$$$$,927,"3 Southgate Ave Southbank, Melbourne, Victoria 3006 Australia",-37.820228854111,144.966524161848,19854,Flinders Street,0.217,<=250 m
+Nobu Melbourne,4,$$$$,1462,"Crown Entertainment Complex 8 Whiteman St, Melbourne, Victoria 3006 Australia",-37.823665224865,144.958902664929,22180,Southern Cross,0.916,500–1000 m
+Stalactites,4,$$ - $$$,1473,"177-183 Lonsdale St, Melbourne, Victoria 3000 Australia",-37.8111764825,144.967067392993,19842,Melbourne Central,0.416,250–500 m
+St Ali Coffee Roasters,4,$$ - $$$,632,"12-18 Yarra Pl, Melbourne, Victoria 3205 Australia",-37.831300007101,144.960311327577,19854,Flinders Street,1.559,>1000 m
+Hofbrauhaus,4,$$ - $$$,475,"18-26 Market Lane In the heart of Chinatown, Melbourne, Victoria 3000 Australia",-37.811621016735,144.96932707027,19843,Parliament,0.321,250–500 m
+The Lui Bar,4.5,$$$$,463,"Rialto L 55 525 Collins St, Melbourne, Victoria 3000 Australia",-37.8185477377,144.956990668996,22180,Southern Cross,0.495,250–500 m
+Centonove,4.5,$$$$,252,"109 Cotham Rd, Kew, Boroondara, Victoria 3101 Australia",-37.807615011841,145.038711961842,19904,Glenferrie,1.553,>1000 m
+Axil Coffee Roasters,4.5,$$ - $$$,200,"322 Burwood Rd Hawthorn Not Camberwell, Melbourne, Victoria 3122 Australia",-37.82264497961,145.034258991962,19904,Glenferrie,0.232,<=250 m
+Claypots Seafood Bar,4.5,$$ - $$$,525,"213 Barkly St, St Kilda, Port Phillip, Victoria 3182 Australia",-37.869920883267,144.980493357862,19956,Balaclava,1.144,>1000 m
+La Cucina Di Sandra,5,$$ - $$$,73,"62 Lyndhurst St Warehouse 62, Richmond, Yarra, Victoria 3121 Australia",-37.820846307008,144.999832252506,19907,East Richmond,0.664,500–1000 m
+Vaporetto Bar & Eatery,4.5,$$ - $$$,261,"Rear 681 Glenferrie Rd Enter via Grace St, Hawthorn, Boroondara, Victoria 3122 Australia",-37.820468450813,145.035589116176,19904,Glenferrie,0.134,<=250 m
+Box Seafood Restaurant,4,$$$$,416,"189 Collins St, Melbourne, Victoria 3000 Australia",-37.815394884821,144.967670638565,19854,Flinders Street,0.329,250–500 m
+Ombra Salumi Bar,4.5,$$ - $$$,230,"76 Bourke St, Melbourne, Victoria 3000 Australia",-37.811757013114,144.970959026819,19843,Parliament,0.188,<=250 m
+Brunetti Oro Flinders Lane,4,$$ - $$$,332,"250 Flinders Ln, Melbourne, Victoria 3000 Australia",-37.816703090359,144.96578647055,19854,Flinders Street,0.206,<=250 m
+The Kettle Black,4,$$ - $$$,450,"50 Albert Rd, Melbourne, Victoria 3205 Australia",-37.834063897763,144.971314335694,19854,Flinders Street,1.793,>1000 m
+The Vegie Bar,4,$$ - $$$,936,"380 Brunswick St, Fitzroy, Yarra, Victoria 3065 Australia",-37.795847657973,144.979100788468,19975,Victoria Park,1.398,>1000 m
+Fiorelli,4.5,$$ - $$$,213,"209 Camberwell Road, Camberwell, Victoria 3124 Australia",-37.830402011904,145.05585697715,19853,Camberwell,0.494,250–500 m
+Galleon Cafe,4.5,$$ - $$$,260,"9 Carlisle St, St Kilda, Port Phillip, Victoria 3182 Australia",-37.867056200219,144.978980172881,19956,Balaclava,1.304,>1000 m
+Estelle,4.5,$$$$,395,"243 High St, Northcote, Victoria 3070 Australia",-37.77325629153,144.998006673994,20016,Northcote,0.447,250–500 m
+Top Paddock,4,$$ - $$$,692,"658 Church Street, Richmond, Yarra, Victoria Australia",-37.833248827726,144.996660868126,19959,South Yarra,0.692,500–1000 m
+Jinda Thai,4.5,$$ - $$$,328,"3-7 Ferguson St, Abbotsford, Yarra, Victoria 3067 Australia",-37.809062059098,144.99240798267,19977,North Richmond,0.149,<=250 m
+Byblos Bar & Restaurant,4,$$ - $$$,314,"12 World Trade Centre, Melbourne, Victoria 3005 Australia",-37.821759808726,144.953747375381,22180,Southern Cross,0.472,250–500 m
+Eureka 89,4.5,$$$$,264,"7 Riverside Quay Level 89, Eureka Tower, Melbourne, Victoria 3006 Australia",-37.821334510958,144.964697074594,19854,Flinders Street,0.391,250–500 m
+Hanoi Mee Kitchen & Bar,4.5,$$ - $$$,112,"140 Rouse St Port Melbourne, Melbourne, Victoria 3207 Australia",-37.842164420449,144.939974315902,22180,Southern Cross,2.875,>1000 m
+The Olive Tree,4.5,$$ - $$$,180,"19 Park St, Melbourne, Victoria 3205 Australia",-37.83305999722,144.969897961696,19854,Flinders Street,1.661,>1000 m
+Chuckle Park Bar,4.5,$$ - $$$,157,"322 Little Collins St, Melbourne, Victoria 3000 Australia",-37.814972855996,144.964077903407,19854,Flinders Street,0.449,250–500 m
+Gin Palace,4.5,$$ - $$$,274,"10 Russell Pl, Melbourne, Victoria 3000 Australia",-37.813936559397,144.967606768463,19854,Flinders Street,0.489,250–500 m
+Mahn Doo,4.5,$$ - $$$,119,"365 La Trobe St, Melbourne, Victoria 3000 Australia",-37.811446128325,144.958287349417,19841,Flagstaff,0.239,<=250 m
+Banff,4.5,$,384,"145 Fitzroy St, St Kilda, Port Phillip, Victoria 3182 Australia",-37.859416263113,144.978574991682,19957,Windsor,1.239,>1000 m
+Young and Jacksons,4,$$ - $$$,366,"Cnr Swanston & Flinders Sts, Melbourne, Victoria 3000 Australia",-37.817412408915,144.967339721027,19854,Flinders Street,0.105,<=250 m
+Attica,4.5,$$$$,626,"74 Glen Eira Rd, Ripponlea, Port Phillip, Victoria 3185 Australia",-37.876984983625,144.997320028486,19955,Ripponlea,0.219,<=250 m
+St LuJa,4.5,$$ - $$$,124,"9 Fitzroy St, St Kilda, Port Phillip, Victoria 3182 Australia",-37.862603314157,144.97315684565,19957,Windsor,1.81,>1000 m
+Sister of Soul,4,$$ - $$$,402,"73 Acland St, St Kilda, Port Phillip, Victoria 3182 Australia",-37.867766776061,144.978743216479,19956,Balaclava,1.31,>1000 m
+Bistro Guillaume,4,$$$$,1115,"Crown Entertainment Complex 8 Whiteman St Riverside at Crown, Southbank, Melbourne, Victoria 3006 Australia",-37.823665224865,144.958902664929,22180,Southern Cross,0.916,500–1000 m
+Mezzo,4,$$ - $$$,324,"35 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.81075231629,144.971736196881,19843,Parliament,0.109,<=250 m
+Self Preservation,4,$$ - $$$,207,"70 Bourke St, Melbourne, Victoria 3000 Australia",-37.811714013951,144.971085006823,19843,Parliament,0.176,<=250 m
+Vertue Coffee Roasters,4.5,$$ - $$$,114,"8 Raffa Place, Melbourne, Victoria 3053 Australia",-37.797693353052,144.968418052871,19842,Melbourne Central,1.455,>1000 m
+Shakahari Vegetarian Restaurant,4.5,$$ - $$$,221,"201-203 Faraday St, Melbourne, Victoria 3053 Australia",-37.798943010997,144.96785713591,19842,Melbourne Central,1.307,>1000 m
+Bacash Restaurant,4.5,$$$$,208,"175 Domain Rd, Melbourne, Victoria 3141 Australia",-37.83424163602,144.981966980259,19959,South Yarra,1.024,>1000 m
+Koko Japanese Restaurant,4,$$$$,323,"Crown Entertainment Complex 8 Whiteman St 8 Whiteman St, Southbank, Melbourne, Victoria 3006 Australia",-37.824313397437,144.956855720355,22180,Southern Cross,0.855,500–1000 m
+La Belle Miette,4.5,$$ - $$$,121,"8 Collins St, Melbourne, Victoria 3000 Australia",-37.813284782606,144.973314006335,19843,Parliament,0.251,250–500 m
+Cafe Excello,4,$$ - $$$,220,"99 Spring St, Melbourne, Victoria 3000 Australia",-37.812528148206,144.973334709636,19843,Parliament,0.168,<=250 m
+Lee Ho Fook,4.5,$$ - $$$,200,"11-15 Duckboard Pl, Melbourne, Victoria 3000 Australia",-37.815602336924,144.971308133086,19854,Flinders Street,0.486,250–500 m
+Scugnizzo,4.5,$$ - $$$,180,"558 Little Bourke St Entrance via Merritts place, Melbourne, Victoria 3000 Australia",-37.815032870423,144.956101768164,19841,Flagstaff,0.342,250–500 m
+The Breslin Bar & Grill,4,$$ - $$$,650,"2 Southbank Bvd, Melbourne, Victoria 3006 Australia",-37.821534209802,144.962471427844,19854,Flinders Street,0.534,500–1000 m
+Tazio,4,$$ - $$$,291,"91 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.815374977801,144.971189361518,19854,Flinders Street,0.494,250–500 m
+Rice Paper,4,$,287,"245 Swanston St, Melbourne, Victoria 3000 Australia",-37.812254940072,144.964811403754,19842,Melbourne Central,0.323,250–500 m
+Papa Gino's Pizza Restaurant,4,$$ - $$$,465,"Lygon Street Carlton, Melbourne, Victoria 3053 Australia",-37.7944769,144.9681889,19842,Melbourne Central,1.788,>1000 m
+Encore Bar and Restaurant,4.5,$$ - $$$,135,"131 Lonsdale St, Melbourne, Victoria 3000 Australia",-37.810713005164,144.968409084235,19843,Parliament,0.397,250–500 m
+The Jazz Corner Cafe,4,$$ - $$$,305,"350 William St located within The Jazz Corner Hotel - lobby cafe and mezzanine restaurant, Melbourne, Victoria 3000 Australia",-37.811273922125,144.956472918837,19841,Flagstaff,0.107,<=250 m
+Hutong Dumpling Bar,4,$$ - $$$,766,"14-16 Market Lane, Melbourne, Victoria 3000 Australia",-37.811883579852,144.969399322276,19843,Parliament,0.322,250–500 m
+Giro d'Italia,5,$$ - $$$,84,"401 Saint Kida Road, Melbourne, Victoria 3000 Australia",-37.81893866496,144.968181794374,19854,Flinders Street,0.128,<=250 m
+Il Duca,4.5,$$ - $$$,242,"132 Wellington Pde, Melbourne, Victoria 3002 Australia",-37.816234709609,144.985670691815,19979,Jolimont,0.142,<=250 m
+Merchant,4,$$ - $$$,331,"495 Collins St, Melbourne, Victoria 3000 Australia",-37.818201355551,144.957968250363,22180,Southern Cross,0.577,500–1000 m
+Richmond Oyster,4.5,$$ - $$$,326,"437 Church St, Richmond, Yarra, Victoria 3121 Australia",-37.826374297881,144.998017989564,19907,East Richmond,0.084,<=250 m
+Marion Wine Bar,4.5,$$ - $$$,145,"53 Gertrude St, Fitzroy, Yarra, Victoria 3065 Australia",-37.805444140828,144.975837294467,19843,Parliament,0.675,500–1000 m
+Mitre Tavern Steakhouse & Grill,4,$$ - $$$,424,"5 Bank Pl Level 1, Melbourne, Victoria 3000 Australia",-37.816809540529,144.960335467458,19854,Flinders Street,0.606,500–1000 m
+Naked for Satan,4.5,$$ - $$$,1244,"285 Brunswick St, Fitzroy, Yarra, Victoria 3065 Australia",-37.798850432876,144.978183389166,19975,Victoria Park,1.43,>1000 m
+Chez Dre Cafe,4,$$ - $$$,386,"Rear of 285/287 Coventry St Access Via Alleyway, Melbourne, Victoria 3205 Australia",-37.832651714716,144.958228843733,22180,Southern Cross,1.742,>1000 m
+Pier Port Melbourne,4.5,$$ - $$$,189,"1 Bay St, Melbourne, Victoria 3207 Australia",-37.842843983249,144.938095009391,22180,Southern Cross,3.006,>1000 m
+Little Ramen Bar,4,$,173,"369 Little Collins St, Melbourne, Victoria 3000 Australia",-37.816363288004,144.962794298754,19854,Flinders Street,0.425,250–500 m
+Red Pepper Indian Restaurant,4,$$ - $$$,408,"14 Bourke St, Melbourne, Victoria 3000 Australia",-37.811313987622,144.972481012797,19843,Parliament,0.048,<=250 m
+Pacinos Italian Family Restaurant,4.5,$$ - $$$,240,"300 Epsom Rd 300-320 Epsom Road, Ascot Vale, Moonee Valley, Victoria 3031 Australia",-37.782382423888,144.916141128594,20028,Showgrounds,0.16,<=250 m
+Angus & Bon,4.5,$$ - $$$,168,"168 Greville Street, Prahran, Stonnington, Victoria 3181 Australia",-37.849526874651,144.992317708671,19958,Prahran,0.216,<=250 m
+Miyako Japanese Cuisine & Teppanyaki,4,$$ - $$$,323,"3 Southgate Ave Upper Level, Shop UR2, Southgate Arts & Leisure Precinct, Melbourne, Victoria 3006 Australia",-37.820228854111,144.966524161848,19854,Flinders Street,0.217,<=250 m
+Nirankar Restaurant,4.5,$$ - $$$,189,"174-176 Queen St, Melbourne, Victoria 3000 Australia",-37.814317474987,144.960667307005,19841,Flagstaff,0.511,500–1000 m
+BearBrass,4,$$ - $$$,625,"Shop GR3A 3 Southgate Ave Southbank VIC, Melbourne, Victoria 3006 Australia",-37.820228854111,144.966524161848,19854,Flinders Street,0.217,<=250 m
+3 Brothersss Indian Restaurant,5,$$ - $$$,41,"513 Elizabeth St Queen Victoria Market, Melbourne, Victoria 3000 Australia",-37.80694768662,144.959489146694,19842,Melbourne Central,0.43,250–500 m
+Cherry & Twigs,4.5,$,135,"Shop 1B 555 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.819943995131,144.955790967194,22180,Southern Cross,0.445,250–500 m
+Shujinko,4,$,142,"225 Russell St, Melbourne, Victoria 3000 Australia",-37.81134097735,144.967148697454,19842,Melbourne Central,0.429,250–500 m
+Aagaman Indian Nepalese Restaurant,4.5,$$ - $$$,132,"271 Bay St, Melbourne, Victoria 3207 Australia",-37.837453748955,144.943061203204,22180,Southern Cross,2.291,>1000 m
+Kisume,4,$$$$,399,"175 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.816124403764,144.968658362035,19854,Flinders Street,0.285,250–500 m
+Cafe Andiamo,4,$$ - $$$,553,"36-38 Degraves Lane, Melbourne, Victoria 3000 Australia",-37.816940884952,144.965841372016,19854,Flinders Street,0.181,<=250 m
+Simply Spanish QVM,4.5,$$ - $$$,210,"513 Elizabeth St, Melbourne, Victoria 3000 Australia",-37.80694768662,144.959489146694,19842,Melbourne Central,0.43,250–500 m
+The Deck Restaurant,4,$$ - $$$,284,"Upper Level Southgate Southgate Centre, Southgate Arts & Leisure Complex/3, Melbourne, Victoria 3006 Australia",-37.820228854111,144.966524161848,19854,Flinders Street,0.217,<=250 m
+Bangkok Jam,4.5,$$ - $$$,100,"107 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.811493737535,144.969262361978,19843,Parliament,0.324,250–500 m
+Teatro,4,$$ - $$$,510,"Southbank Promenade Tenancy A Hamer Hall, Melbourne, Victoria 3006 Australia",-37.820213850504,144.964965127858,19854,Flinders Street,0.275,250–500 m
+Meatmaiden,4,$$ - $$$,344,"195 Little Collins St Basement, Melbourne, Victoria 3000 Australia",-37.814827010881,144.968049081493,19854,Flinders Street,0.398,250–500 m
+Betty's Burgers,4.5,$$ - $$$,86,"222 Exhibition St, Melbourne, Victoria 3000 Australia",-37.810725033195,144.970236506765,19843,Parliament,0.238,<=250 m
+China Red,4,$$ - $$$,353,"Shop 6 206 Bourke St, Melbourne, Victoria 3000 Australia",-37.812913548114,144.967020454336,19842,Melbourne Central,0.511,500–1000 m
+SPQR Pizzeria,4.5,$$ - $$$,194,"26 Liverpool Street, Melbourne 3000, Melbourne, Victoria 3000 Australia",-37.811275430867,144.971419612398,19843,Parliament,0.133,<=250 m
+The Atlantic Restaurant,4,$$$$,1570,"Crown Entertainment Complex 8 Whiteman St Crown Entertainment Complex, Melbourne, Victoria 3006 Australia",-37.823665224865,144.958902664929,22180,Southern Cross,0.916,500–1000 m
+Rockpool Bar & Grill,4,$$$$,1961,"Crown Complex Southbank, Melbourne, Victoria 3006 Australia",-37.8205964,144.9651223,19854,Flinders Street,0.302,250–500 m
+Rubiras,4.5,$$ - $$$,218,"192 Station St Swallows Hotel, Melbourne, Victoria 3207 Australia",-37.832810006958,144.945599997856,22180,Southern Cross,1.731,>1000 m
+Metro Burger,4.5,$,146,"12 Degraves St, Melbourne, Victoria 3000 Australia",-37.817591865462,144.966048321205,19854,Flinders Street,0.113,<=250 m
+Dunyazad,4.5,$$ - $$$,171,"329 Doncaster Rd, Balwyn North, Boorandara, Melbourne, Victoria VIC 3104 Australia",-37.790702007613,145.09596304274,49343,Union,3.662,>1000 m
+Bar Lourinha,4.5,$$ - $$$,284,"37 Little Collins St, Melbourne, Victoria 3000 Australia",-37.81276497888,144.972475983655,19843,Parliament,0.194,<=250 m
+Chin Chin,4.5,$$ - $$$,6029,"125 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.815612898122,144.970353601952,19854,Flinders Street,0.422,250–500 m
+Izakaya Den,4.5,$$ - $$$,258,"Basement 118 Russell St, Melbourne, Victoria 3000 Australia",-37.813511932182,144.969085671459,19843,Parliament,0.433,250–500 m
+Matteo's,4.5,$$$$,378,"533 Brunswick St Melbourne, North Fitzroy, Yarra, Victoria 3068 Australia",-37.791167412787,144.979471603865,19974,Clifton Hill,1.429,>1000 m
+Humble Rays,4.5,$$ - $$$,88,"71 Bouverie St Carlton, Melbourne, Victoria 3053 Australia",-37.804807074277,144.96144942239,19842,Melbourne Central,0.579,500–1000 m
+Smith and Daughters,4.5,$$ - $$$,388,"175 Brunswick St, Fitzroy, Yarra, Victoria 3065 Australia",-37.802201727313,144.977592213535,19843,Parliament,1.067,>1000 m
+Hophaus Bar,4,$$ - $$$,471,"Southgate Ave Shop MR5, Mid-Level, Southbank Promenade, Melbourne, Victoria 3006 Australia",-37.820213850504,144.964965127858,19854,Flinders Street,0.275,250–500 m
+Hunky Dory,4.5,$,245,"670 Chapel Street Shop 17, Melbourne, Victoria 3205 Australia",-37.837226306012,144.996288383844,19959,South Yarra,0.372,250–500 m
+Waiters Restaurant - Italian Waiters Club,4,$$ - $$$,282,"20 Meyers Pl, Melbourne, Victoria 3000 Australia",-37.812087595375,144.972347153803,19843,Parliament,0.125,<=250 m
+Gopal's Vegetarian,4.5,$,170,"139 Swanston St, Melbourne, Victoria 3000 Australia",-37.814425224352,144.965762833583,19854,Flinders Street,0.444,250–500 m
+Sushi Hub Swanston,4.5,$,191,"55 Swanston St, Melbourne, Victoria 3000 Australia",-37.816418985751,144.966679143238,19854,Flinders Street,0.211,<=250 m
+Spaghetti Tree,4,$$ - $$$,786,"59 Bourke St, Melbourne, Victoria 3000 Australia",-37.81201966005,144.971517932122,19843,Parliament,0.163,<=250 m
+Arbory Bar & Eatery,4,$$ - $$$,827,"Flinders Walk, Melbourne, Victoria 3000 Australia",-37.819167602938,144.965429023486,19854,Flinders Street,0.165,<=250 m
+La Spaghettata,4,$$ - $$$,536,"238 Lygon St, Melbourne, Victoria 3053 Australia",-37.801604977717,144.967045013312,19842,Melbourne Central,1.006,>1000 m
+Triim Food & Drink,4,$$ - $$$,224,"33 Hardware Lane, Melbourne, Victoria 3000 Australia",-37.813841634343,144.96120098278,19842,Melbourne Central,0.451,250–500 m
+Gourmet Curry Hut,4.5,$$ - $$$,175,"318 Hub Arcade Little Collins Street, Melbourne, Victoria 3000 Australia",-37.814972855996,144.964077903407,19854,Flinders Street,0.449,250–500 m
+Little Billy,4,$$ - $$$,162,"Shop W2 195 William St, Melbourne, Victoria 3000 Australia",-37.814556778322,144.957419068067,19841,Flagstaff,0.326,250–500 m
+Thirty Eight Chairs,4.5,$$ - $$$,283,"4A Bond St, Yarra, Victoria 3141 Australia",-37.841118819938,144.994738318489,19959,South Yarra,0.364,250–500 m
+The Fitz Cafe & Rooftop,4.5,$$ - $$$,257,"347 Brunswick St, Fitzroy, Yarra, Victoria 3065 Australia",-37.796837015914,144.978510031932,19975,Victoria Park,1.424,>1000 m
+Restaurant 1903,4.5,$$ - $$$,155,"44 Spencer St Very Close to Southern Cross Railway Station, Melbourne, Victoria 3000 Australia",-37.819740021517,144.954748761353,22180,Southern Cross,0.355,250–500 m
+Universal Restaurant,4,$$ - $$$,363,"141 Lygon Street Carlton, Melbourne, Victoria 3053 Australia",-37.803869348859,144.966109257641,19842,Melbourne Central,0.742,500–1000 m
+Pho Bo Ga Mekong,4,$,448,"241 Swanston St, Melbourne, Victoria 3000 Australia",-37.812390475447,144.964830430674,19842,Melbourne Central,0.336,250–500 m
+Gradi Crown,4,$$ - $$$,1093,"Crown Entertainment Complex 8 Whiteman St Shop 25, Melbourne, Victoria 3006 Australia",-37.824313397437,144.956855720355,22180,Southern Cross,0.855,500–1000 m
+Pinchy's,4.5,$$ - $$$,146,"Level 1, 200 Bourke St Midcity Arcade, Melbourne, Victoria 3000 Australia",-37.812786227005,144.967407195348,19843,Parliament,0.52,500–1000 m
+Agathe Patisserie,4.5,$,73,"64/362 Coventry Street South Melbourne Market Stall, Melbourne, Victoria 3205 Australia",-37.832732390534,144.956419526113,22180,Southern Cross,1.703,>1000 m
+Claypots Barbarossa,4.5,$$ - $$$,190,"79 Hardware Lane Melbourne CBD, Melbourne, Victoria 3000 Australia",-37.812972389074,144.960651968122,19842,Melbourne Central,0.378,250–500 m
+Seedling Cafe,4.5,$$ - $$$,75,"349 Little Collins St, Melbourne, Victoria 3000 Australia",-37.815460221756,144.963275503816,19854,Flinders Street,0.453,250–500 m
+Vespa Rossa,4.5,$$ - $$$,122,"30 Block Pl, Melbourne, Victoria 3000 Australia",-37.815307629209,144.964399517032,19854,Flinders Street,0.402,250–500 m
+Ides,4.5,$$$$,129,"92 Smith St, Melbourne, Victoria 3066 Australia",-37.805688682853,144.983312443357,19976,Collingwood,0.926,500–1000 m
+Uncle Collins Street,4.5,$$ - $$$,81,"15 Collins St Level 1, Melbourne, Victoria 3000 Australia",-37.813751947979,144.973301936394,19843,Parliament,0.302,250–500 m
+Mr. Hive,4,$$ - $$$,456,"Level 1, Crown Metropol 8 Whiteman Street, Melbourne, Victoria Australia",-37.824313397437,144.956855720355,22180,Southern Cross,0.855,500–1000 m
+Sosta Ristorante,4.5,$$ - $$$,183,"12 Errol Street, Melbourne, Victoria 3051 Australia",-37.804826059288,144.949568326096,19973,North Melbourne,0.727,500–1000 m
+Gordon's Cafe & Bar,4,$$ - $$$,147,"306 Little Collins St Shop 4, Melbourne, Victoria 3000 Australia",-37.814879397775,144.964421226161,19854,Flinders Street,0.442,250–500 m
+Isan Soul Thai Street Food,4.5,$$ - $$$,89,"98 Bourke St, Melbourne, Victoria 3000 Australia",-37.811987012537,144.970202979152,19843,Parliament,0.26,250–500 m
+Oriental Spoon,4,$$ - $$$,217,"254 La Trobe St, Melbourne, Victoria 3000 Australia",-37.810002806508,144.961492337734,19842,Melbourne Central,0.097,<=250 m
+Oak & Vine,4.5,$$ - $$$,108,"60 Market St, Melbourne, Victoria 3000 Australia",-37.817827061665,144.960705444664,19854,Flinders Street,0.552,500–1000 m
+The Bond Store,4.5,$$ - $$$,154,"1 Riverside Qy, Melbourne, Victoria 3006 Australia",-37.822004350751,144.96369149767,19854,Flinders Street,0.502,500–1000 m
+Transformer Fitzroy,4.5,$$ - $$$,285,"99 Rose Street, Fitzroy, Yarra, Victoria 3065 Australia",-37.79587821001,144.979331961358,19975,Victoria Park,1.378,>1000 m
+Windows Restaurant,4,$$ - $$$,208,"65 Queens Rd, Melbourne, Victoria 3004 Australia",-37.849924721685,144.978368461588,19958,Prahran,1.01,>1000 m
+Code Black,4.5,$$ - $$$,187,"15-17 Weston St, Brunswick, Moreland, Victoria 3056 Australia",-37.774777397409,144.962365480588,19969,Jewell,0.322,250–500 m
+Grill'd Degraves St,4,$,219,"15 Degraves St, Melbourne, Victoria 3000 Australia",-37.817579334517,144.965763336497,19854,Flinders Street,0.133,<=250 m
+Bistro Gitan,4.5,$$ - $$$,268,"52 Toorak Rd West, South Yarra, Victoria 3141 Australia",-37.837238501682,144.979293069327,19959,South Yarra,1.154,>1000 m
+Topolino's,4,$$ - $$$,386,"87 Fitzroy St, St Kilda, Port Phillip, Victoria 3182 Australia",-37.86050901183,144.976645980485,19957,Windsor,1.439,>1000 m
+Kirks Wine Bar,4,$$ - $$$,217,"Cnr Hardware Lane and Little Bourke, Melbourne, Victoria 3000 Australia",-37.813684808935,144.961263092682,19842,Melbourne Central,0.433,250–500 m
+Saporito Taquito,4.5,$$ - $$$,96,"163 Inkerman St Unit 211, Melbourne, Victoria 3182 Australia",-37.865115077172,144.988217700733,19956,Balaclava,0.673,500–1000 m
+Esca Grill,4.5,$$$$,345,"650 Mt Alexander Rd, Moonee Ponds, Moonee Valley, Victoria 3039 Australia",-37.770146982637,144.926414994954,20039,Ascot Vale,0.702,500–1000 m
+ShanDong MaMa,4,$,220,"200 Bourke St Mid City Centre, Shop 7, Melbourne, Victoria 3000 Australia",-37.812786227005,144.967407195348,19843,Parliament,0.52,500–1000 m
+Simply Spanish,4,$$ - $$$,251,"116 Cecil St, Melbourne, Victoria 3205 Australia",-37.8312282161,144.956675677074,22180,Southern Cross,1.549,>1000 m
+Milk the Cow,4.5,$$ - $$$,152,"323 Lygon St, Melbourne, Victoria 3053 Australia",-37.797786014992,144.967173004973,19842,Melbourne Central,1.41,>1000 m
+Bluetrain,3.5,$$ - $$$,667,"Southgate Complex, Upper Level, Melbourne, Victoria 3006 Australia",-37.8206516,144.9657317,19854,Flinders Street,0.282,250–500 m
+Peko Peko,4.5,$,208,"190 Wells St, Melbourne, Victoria 3205 Australia",-37.831649093365,144.969737125578,19854,Flinders Street,1.504,>1000 m
+Republica,4,$$ - $$$,492,"10-18 Jacka Boulevard St. Kilda Sea Baths, St Kilda, Port Phillip, Victoria 3182 Australia",-37.86503,144.9715,19956,Balaclava,1.995,>1000 m
+Tsindos-The Greeks Restaurant,4,$$ - $$$,718,"197 Lonsdale St, Melbourne, Victoria 3000 Australia",-37.81125699068,144.966554001424,19842,Melbourne Central,0.378,250–500 m
+Tulum Restaurant,4,$$ - $$$,167,"217 Carlisle Street, Balaclava Near the Balaclava train station, Melbourne, Victoria 2575 Australia",-37.868988061263,144.993938601107,19956,Balaclava,0.067,<=250 m
+Melbourne Hwaro Korean Barbecue,4,$$ - $$$,141,"Level Ground 562 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.81515859897,144.955702873392,19841,Flagstaff,0.353,250–500 m
+Journeyman,4.5,$$ - $$$,203,"169 Chapel St, Windsor, Stonnington, Victoria 3181 Australia",-37.85222098597,144.993113989473,19958,Prahran,0.415,250–500 m
+Square & Compass,4.5,$$ - $$$,113,"222 Clarendon Street, Melbourne, Victoria Australia",-37.809757510112,144.983918874051,19979,Jolimont,0.753,500–1000 m
+Amaru Melbourne Restaurant,4.5,$$$$,118,"Shop 5 1121 High St, Armadale, Stonnington, Victoria 3143 Australia",-37.855889619261,145.024664395035,19945,Armadale,0.473,250–500 m
+Don Don Japanese,4,$,241,"198 Little Lonsdale St, Melbourne, Victoria 3000 Australia",-37.810526549728,144.961730383784,19842,Melbourne Central,0.1,<=250 m
+Beer DeLuxe,4,$$ - $$$,304,"Federation Square Corner Swanston and Flinders Streets, Melbourne, Victoria 3000 Australia",-37.818213341673,144.968058972139,19854,Flinders Street,0.097,<=250 m
+Grill'd QV,4,$$ - $$$,235,"Level 2, Queen Victoria Square, Melbourne, Victoria 3000 Australia",-37.81041060807262,144.96537371122822,20002,Melbourne Central,0.292,250–500 m
+Rumi Brunswick,4.5,$$ - $$$,265,"116 Lygon St, Brunswick East, Moreland, Victoria 3057 Australia",-37.774770398519,144.971357502496,19969,Jewell,1.111,>1000 m
+Abbey Road Cafe,4,$$ - $$$,805,"129-131 Acland St, St Kilda, Port Phillip, Victoria 3182 Australia",-37.868581622778,144.979500102335,19956,Balaclava,1.234,>1000 m
+Spicy Korea,4.5,$,72,"U 1 601 Little Collins St, Melbourne, Victoria 3000 Australia",-37.817928315056,144.954839285908,22180,Southern Cross,0.301,250–500 m
+The Meat & Wine Co Hawthorn East,4,$$ - $$$,417,"482 Riversdale Rd, Hawthorn, Boroondara, Victoria 3123 Australia",-37.831451258544,145.055925541118,19853,Camberwell,0.595,500–1000 m
+Nine Elephants,4.5,$$ - $$$,145,"67 Village St Docklands, Melbourne, Victoria 3008 Australia",-37.819486611528,144.949598624028,22180,Southern Cross,0.235,<=250 m
+Little Black Pig & Sons,4.5,$$ - $$$,196,"48 Burgundy St, Heidelberg, Banyule, Victoria 3084 Australia",-37.756281345038,145.068678858256,19935,Heidelberg,0.708,500–1000 m
+GRK Greek Kitchen & Bar,4.5,$$ - $$$,115,"845/847 High St, Thornbury, Darebin, Victoria 3071 Australia",-37.755031226089,145.000968419482,20014,Thornbury,0.211,<=250 m
+The Boatbuilders Yard,4,$$ - $$$,680,"23 South Wharf Prom, Melbourne, Victoria 3006 Australia",-37.823648293421,144.955937315224,22180,Southern Cross,0.749,500–1000 m
+La Petite Creperie,4.5,$,155,"125 Swanston St Opposite Melbourne Town Hall, Melbourne, Victoria Australia",-37.815058141861,144.966617368612,19854,Flinders Street,0.362,250–500 m
+Lord Cardigan,4.5,$$ - $$$,114,"59 Cardigan Pl, Melbourne, Victoria 3206 Australia",-37.841152599007,144.9531691917,22180,Southern Cross,2.586,>1000 m
+400 Gradi,4,$$ - $$$,773,"99 Lygon St, Brunswick West, Moreland, Victoria 3057 Australia",-37.775962263241,144.970523586949,19969,Jewell,1.043,>1000 m
+Belgian Beer Cafe,4,$$ - $$$,256,"5 Riverside Qy Southbank, Melbourne, Victoria 3006 Australia",-37.821334510958,144.964697074594,19854,Flinders Street,0.391,250–500 m
+Indian Palace Restaurant,4.5,$$ - $$$,153,"131 Church St, Brighton, Bayside, Victoria 3186 Australia",-37.91552292086,144.996444371062,19951,Middle Brighton,0.045,<=250 m
+Anada,4.5,$$ - $$$,219,"197 Gertrude St, Fitzroy, Yarra, Victoria 3065 Australia",-37.806003004222,144.981168017248,19843,Parliament,0.917,500–1000 m
+Ish Restaurant,5,$$ - $$$,62,"199 Gertrude St, Fitzroy, Yarra, Victoria 3065 Australia",-37.806003004222,144.981214033897,19843,Parliament,0.921,500–1000 m
+L'Hotel Gitan,4,$$ - $$$,256,"32 Commercial Rd, Prahran, Stonnington, Victoria 3181 Australia",-37.846262961554,144.989477919875,19958,Prahran,0.364,250–500 m
+Hawker Hall,4,$$ - $$$,506,"98 Chapel St, Windsor, Stonnington, Victoria 3181 Australia",-37.854552412338,144.993069062472,19957,Windsor,0.19,<=250 m
+Crossways Restaurant,4.5,$,104,"309-325 Bourke St, Melbourne, Victoria 3000 Australia",-37.814122176643,144.96438753091,19842,Melbourne Central,0.491,250–500 m
+Le Petite Bourke,4.5,$$ - $$$,130,"24 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.810557143673996,144.971518435037,19843,Parliament,0.134,<=250 m
+Royal Stacks,4,$,169,"470 Collins St, Melbourne, Victoria 3000 Australia",-37.817621746947,144.958378293066,22180,Southern Cross,0.613,500–1000 m
+Donnini's Restaurant,4.5,$$ - $$$,297,"320 Lygon St Carlton, Melbourne, Victoria 3053 Australia",-37.799529995676,144.967409039367,19842,Melbourne Central,1.232,>1000 m
+City Wine Shop,4.5,$$ - $$$,255,"159 Spring St, Melbourne, Victoria 3000 Australia",-37.810955996537,144.972604981145,19843,Parliament,0.029,<=250 m
+Rock Paper Scissors,4.5,$$ - $$$,76,"136-138 Rouse St, Melbourne, Victoria 3207 Australia",-37.842164420449,144.939974315902,22180,Southern Cross,2.875,>1000 m
+Ricardo's Trattoria,4.5,$$ - $$$,176,"99 Dundas Pl, Albert Park, Port Phillip, Victoria 3206 Australia",-37.841266006157,144.955196522621,22180,Southern Cross,2.615,>1000 m
+Lune Croissanterie,4.5,$,156,"161 Collins St Shop 16, Enter via Russell Street, Melbourne, Victoria 3000 Australia",-37.815099464643,144.968625756432,19854,Flinders Street,0.385,250–500 m
+Maccaroni Trattoria Italiana,4,$$ - $$$,408,"10-16 Manchester Lane, Melbourne, Victoria 3000 Australia",-37.815876844253,144.965984870198,19854,Flinders Street,0.283,250–500 m
+Mjolner,4.5,$$$$,136,"106 Hardware St, Melbourne, Victoria 3000 Australia",-37.81213998227,144.960678035841,19842,Melbourne Central,0.297,250–500 m
+Ten Square Cafe,5,$$ - $$$,64,"120 Hardware St, Melbourne, Victoria 3000 Australia",-37.811972595664,144.960607544035,19842,Melbourne Central,0.286,250–500 m
+Koko Black,4.5,$$ - $$$,187,"167 Lygon St, Melbourne, Victoria 3053 Australia",-37.801784979087,144.966494992825,19842,Melbourne Central,0.969,500–1000 m
+University Cafe,4,$$ - $$$,269,"257 Lygon St Carlton, Melbourne, Victoria 3053 Australia",-37.799484817218,144.966876872334,19842,Melbourne Central,1.222,>1000 m
+Asado,4,$$$$,211,"6 Riverside Quay, Melbourne, Victoria 3006 Australia",-37.820635837419,144.963763246762,19854,Flinders Street,0.382,250–500 m
+Le Petit Gateau,4.5,$$ - $$$,76,"458 Little Collins St, Melbourne, Victoria 3000 Australia",-37.815573670815,144.95936836347,19841,Flagstaff,0.516,500–1000 m
+The Lady Of St Kilda,4.5,$$ - $$$,53,"204 Barkly St Corner Smith Street, St Kilda, Port Phillip, Victoria 3182 Australia",-37.869977083928,144.980902897651,19956,Balaclava,1.108,>1000 m
+Paris Go Bistro,4,$$ - $$$,169,"116 Rathdowne St, Melbourne, Victoria 3053 Australia",-37.796975987869,144.970852492829,19843,Parliament,1.576,>1000 m
+ShanDong MaMa mini,4.5,$,63,"5 Centre Pl, Melbourne, Victoria 3000 Australia",-37.816610470329,144.965533337074,19854,Flinders Street,0.227,<=250 m
+Tokyo Tina,4.5,$$ - $$$,202,"66A Chapel St, Windsor, Stonnington, Victoria 3181 Australia",-37.855452628739,144.992879463822,19957,Windsor,0.1,<=250 m
+Il Gambero,4,$$ - $$$,322,"166 Lygon St Carlton, Melbourne, Victoria 3053 Australia",-37.803289614526,144.966738068018,19842,Melbourne Central,0.824,500–1000 m
+Viet Kitchen,4.5,$,130,"110 Hopkins St, Footscray, Maribyrnong, Victoria 3011 Australia",-37.799817997869,144.901676981198,20025,Footscray,0.194,<=250 m
+Radio Mexico Taqueria & Bar,4,$$ - $$$,288,"11-13 Carlisle St, St Kilda, Port Phillip, Victoria 3182 Australia",-37.867051673991,144.97924168826,19956,Balaclava,1.282,>1000 m
+Mister Bianco,4,$$ - $$$,214,"285 High St, Kew, Boroondara, Victoria 3101 Australia",-37.805085982105,145.035132973006,19904,Glenferrie,1.825,>1000 m
+Kekou,5,$$ - $$$,64,"396 Bridge Road, Richmond, Yarra, Victoria 3121 Australia",-37.819340037098,145.004683614245,19906,Burnley,0.948,500–1000 m
+The Abyssinian,4.5,$$ - $$$,113,"277 Racecourse Rd, Melbourne, Victoria 3031 Australia",-37.788609004481,144.931801960306,20040,Newmarket,0.286,250–500 m
+Blue Chillies,4.5,$$ - $$$,145,"182 Brunswick St, Fitzroy, Yarra, Victoria 3065 Australia",-37.802064976563,144.978037963145,19843,Parliament,1.096,>1000 m
+Caffe e Torta,4,$$ - $$$,289,"314 Little Collins St, Melbourne, Victoria 3000 Australia",-37.814917786892,144.964261299448,19854,Flinders Street,0.445,250–500 m
+Gimlet At Cavendish House,4.5,$$$$,104,"33 Russell St, Melbourne, Victoria 3000 Australia",-37.815963219766,144.969242077772,19854,Flinders Street,0.328,250–500 m
+Pascale Bar & Grill,4.5,$$$$,161,"133 Russell St Level 1, Melbourne, Victoria 3000 Australia",-37.813332601363,144.968060564701,19843,Parliament,0.496,250–500 m
+Spice Temple,4,$$$$,1311,"Crown Entertainment Complex 8 Whiteman St Crown Complex, Southbank, Melbourne, Victoria 3006 Australia",-37.823665224865,144.958902664929,22180,Southern Cross,0.916,500–1000 m
+Ludlow Bar & Dining Room,3.5,$$ - $$$,702,"6 Riverside Qy, Melbourne, Victoria 3006 Australia",-37.820635837419,144.963763246762,19854,Flinders Street,0.382,250–500 m
+Sunda,4.5,$$ - $$$,111,"18 Punch lane, Melbourne, Victoria 3000 Australia",-37.810443946072,144.971097160583,19843,Parliament,0.173,<=250 m
+The General Assembly,4,$$ - $$$,269,"29 South Wharf Prom, Melbourne, Victoria 3006 Australia",-37.82400498531,144.948477924312,22180,Southern Cross,0.722,500–1000 m
+Shoya,4,$$$$,216,"25 Market Lane, Melbourne, Victoria 3000 Australia",-37.811752570705,144.969118947615,19843,Parliament,0.342,250–500 m
+Pilgrim Bar,4,$$ - $$$,175,"Vaults 15-19 Federation Wharf Federation Square, Melbourne, Victoria 3000 Australia",-37.817513536577,144.969570564558,19854,Flinders Street,0.245,<=250 m
+White Mojo Speciality Coffee & Roaster,4,$$ - $$$,203,"115 Hardware St, Melbourne, Victoria 3000 Australia",-37.812091912055,144.960393386409,19842,Melbourne Central,0.308,250–500 m
+Dip In Cafe,4.5,$$ - $$$,100,"20-22 McKillop St, Melbourne, Victoria 3000 Australia",-37.815176494334,144.96182082452,19854,Flinders Street,0.57,500–1000 m
+Laurent Bakery,4,$$ - $$$,352,"306 Little Collins St, Melbourne, Victoria 3000 Australia",-37.814879397775,144.964421226161,19854,Flinders Street,0.442,250–500 m
+One Eleven,4,$$$$,175,"111 Spring Street The Hotel Windsor, Melbourne, Victoria 3000 Australia",-37.811973224306,144.973031871474,19843,Parliament,0.103,<=250 m
+Mister and Miss Cafe,4,$$ - $$$,199,"Mont Albert Victoria 711-713 Whitehorse Rd, Mont Albert, Whitehorse, Victoria 3127 Australia",-37.815615999427,145.105808007114,49343,Union,1.01,>1000 m
+Steer Dining Room,4.5,$$ - $$$,76,"15 Claremont St, Melbourne, Victoria 3141 Australia",-37.837634462788,144.993684797079,19959,South Yarra,0.149,<=250 m
+Cafe Segovia,4,$$ - $$$,297,"33 Block Place, Melbourne, Victoria 3000 Australia",-37.815173979763,144.964242775442,19854,Flinders Street,0.422,250–500 m
+Hopscotch,3.5,$$ - $$$,589,"Ground Floor, 4 Riverside Quay Southbank, Melbourne, Victoria 3006 Australia",-37.820753854616,144.96329419546,19854,Flinders Street,0.422,250–500 m
+Walkers Doughnuts,4.5,$,127,"26/2 Elizabeth St, Melbourne, Victoria 3000 Australia",-37.817650287327,144.965005780088,19854,Flinders Street,0.187,<=250 m
+Saint Crispin,4,$$$$,332,"300 Smith St, Collingwood, Yarra, Victoria 3066 Australia",-37.800245223474,144.984288013067,19975,Victoria Park,0.901,500–1000 m
+Nevsky Russian Restaurant,4.5,$$ - $$$,160,"476 Glen Huntly Rd, Elsternwick, Glen Eira, Victoria 3185 Australia",-37.885345010034,145.007780978925,19954,Elsternwick,0.608,500–1000 m
+Marios Cafe,4,$$ - $$$,225,"303 Brunswick St, Fitzroy, Yarra, Victoria 3065 Australia",-37.797960442397,144.978309872084,19975,Victoria Park,1.424,>1000 m
+Tim Ho Wan,4,$$ - $$$,361,"206 Bourke St, Melbourne, Victoria 3000 Australia",-37.812913548114,144.967020454336,19842,Melbourne Central,0.511,500–1000 m
+Rosetta,4,$$$$,996,"Crown Entertainment Complex 8 Whiteman St Crown Complex, Melbourne, Victoria 3006 Australia",-37.823665224865,144.958902664929,22180,Southern Cross,0.916,500–1000 m
+Chez Olivier,4.5,$$ - $$$,356,"268 Toorak Rd, South Yarra, Victoria 3141 Australia",-37.839741924703,144.996272039132,19959,South Yarra,0.374,250–500 m
+Le Bon Ton,4,$$ - $$$,306,"51 Gipps St, Collingwood, Yarra, Victoria 3066 Australia",-37.804809882215,144.98857837402701,19976,Collingwood,0.455,250–500 m
+Boosa,4.5,$$ - $$$,97,"716 Centre Rd, Bentleigh, Glen Eira, Victoria 3165 Australia",-37.921179657765,145.057971312226,19939,Bentleigh,1.887,>1000 m
+Da Noi,4,$$$$,274,"95 Toorak Rd South Yarra, Melbourne, Victoria 3141 Australia",-37.83857264921,144.989655532404,19959,South Yarra,0.236,<=250 m
+Bibelot,4.5,$$ - $$$,80,"285-287 Coventry St, Melbourne, Victoria 3205 Australia",-37.832651714716,144.958228843733,22180,Southern Cross,1.742,>1000 m
+White Rabbit,4,$$ - $$$,246,"118 Church St, Brighton, Bayside, Victoria 3186 Australia",-37.915398994421,144.995778428854,19951,Middle Brighton,0.054,<=250 m
+Oriental Tea House,4,$$ - $$$,221,"378 Little Collins St, Melbourne, Victoria 3000 Australia",-37.815568599764,144.962050823943,19854,Flinders Street,0.528,500–1000 m
+Lindt Chocolate Cafe Southgate Melbourne,4,$$ - $$$,208,"Shop G09, 3 Southgate Avenue Southgate Retail Precinct, Melbourne, Victoria 3006 Australia",-37.820228854111,144.966524161848,19854,Flinders Street,0.217,<=250 m
+Fonda Mexican,4,$$ - $$$,312,"31 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.814787699755,144.973230522579,19843,Parliament,0.416,250–500 m
+Corner & Bench,4.5,$,86,"408 Bourke St, Melbourne, Victoria 3000 Australia",-37.814514491621,144.961545981915,19842,Melbourne Central,0.517,500–1000 m
+Fifteen Pounds Cafe,4.5,$$ - $$$,84,"21 Railway Place, Fairfield, Yarra, Victoria 3078 Australia",-37.779578006724,145.017141972211,19930,Fairfield,0.05,<=250 m
+Saporito Cafe Bar & Grill,4.5,$$ - $$$,71,"12-16 Kavanagh St, Melbourne, Victoria 3006 Australia",-37.82271425604,144.966370605382,19854,Flinders Street,0.493,250–500 m
+Pope Joan,4,$$ - $$$,170,"45 Collins St, Melbourne, Victoria 3000 Australia",-37.814639004792,144.972026378369,19843,Parliament,0.406,250–500 m
+The Hof Downtown,4,$$ - $$$,160,"737 Bourke St Corner of Bourke and Village Street, Melbourne, Victoria 3008 Australia",-37.818450884809,144.948873298685,22180,Southern Cross,0.23,<=250 m
+Black Pearl Bar,4.5,$$ - $$$,68,"304 Brunswick Street, Melbourne, Victoria Fitzroy Australia",-37.798074981104,144.978738019699,19975,Victoria Park,1.386,>1000 m
+Hurricane Handsome,4.5,$$ - $$$,89,"329-331 Bay St, Melbourne, Victoria 3207 Australia",-37.836077691911,144.944339862533,22180,Southern Cross,2.111,>1000 m
+Yeonga Korean BBQ,4.5,$$ - $$$,76,"1-3 Cobden St, Melbourne, Victoria 3051 Australia",-37.805621711447,144.956974575742,19842,Melbourne Central,0.689,500–1000 m
+The Crux & Co,4.5,$$ - $$$,100,"35 Albert Rd G01, Melbourne, Victoria 3004 Australia",-37.834662952383,144.971932501053,19959,South Yarra,1.841,>1000 m
+Phancy Cafe,4.5,$$ - $$$,93,"408 Queen St, Melbourne, Victoria 3000 Australia",-37.809095800765,144.958275950029,19842,Melbourne Central,0.391,250–500 m
+The Irish Times Pub,4,$$ - $$$,270,"427 Little Collins St, Melbourne, Victoria 3000 Australia",-37.816246947188,144.960531017259,19854,Flinders Street,0.61,500–1000 m
+Ecco,4,$$ - $$$,157,"97 Toorak Rd, Melbourne, Victoria 3141 Australia",-37.838582623675,144.989712026431,19959,South Yarra,0.231,<=250 m
+George Street Cafe,4.5,$$ - $$$,66,"65 George St, Melbourne, Victoria 3002 Australia",-37.815732298333,144.988165313838,19978,West Richmond,0.299,250–500 m
+Collins Kitchen,4,$$$$,273,"123 Collins St, Melbourne, Victoria 3000 Australia",-37.815298576753,144.969839456011,19854,Flinders Street,0.419,250–500 m
+Lemnos Tavern,4.5,$$ - $$$,113,"445 High St, Prahran, Stonnington, Victoria 3181 Australia",-37.853042999214,145.003320968246,19947,Hawksburn,0.946,500–1000 m
+Moroccan Soup Bar,4.5,$,218,"183 St Georges Rd, North Fitzroy, Yarra, Victoria 3068 Australia",-37.784882116963,144.982291779007,20019,Rushall,0.908,500–1000 m
+Station Hotel,4,$$ - $$$,352,"59 Napier St, Footscray, Maribyrnong, Victoria 3011 Australia",-37.804649871683,144.90177119379,20025,Footscray,0.416,250–500 m
+"Borsch, Vodka & Tears",4,$$ - $$$,236,"173 Chapel St, Windsor, Stonnington, Victoria 3181 Australia",-37.852131006239,144.993127987251,19958,Prahran,0.408,250–500 m
+Munich Brauhaus,3.5,$$ - $$$,1034,"45 South Wharf Promenade, Melbourne, Victoria Australia",-37.82400498531,144.948477924312,22180,Southern Cross,0.722,500–1000 m
+Carosello,4.5,$$ - $$$,88,"22 Margaret St, Moonee Ponds, Moonee Valley, Victoria 3039 Australia",-37.765874978046,144.91967602862,20038,Moonee Ponds,0.049,<=250 m
+Lamaro's Hotel,4,$$ - $$$,194,"273 Cecil St, Melbourne, Victoria 3205 Australia",-37.838560243993,144.960593797714,19854,Flinders Street,2.321,>1000 m
+Postmaster Hotel,4,$$ - $$$,185,"186 High St, Kew, Boroondara, Victoria 3101 Australia",-37.80674597612,145.031453988064,19904,Glenferrie,1.694,>1000 m
+La Roche,4.5,$$ - $$$,325,"185 Acland St, St Kilda, Port Phillip, Victoria 3182 Australia",-37.869548978223,144.980400989289,19956,Balaclava,1.151,>1000 m
+Mr Huang Jin,4.5,$$ - $$$,96,"24 Katherine Pl Plaza Level, Rialto Towers, Melbourne, Victoria 3000 Australia",-37.820306302896,144.956609040944,22180,Southern Cross,0.527,500–1000 m
+Andrew's Hamburgers,4.5,$,169,"144 Bridport St, Melbourne, Victoria 3206 Australia",-37.840638788343,144.955269864274,22180,Southern Cross,2.547,>1000 m
+Rococo,4,$$ - $$$,973,"87-91 Acland St St.Kilda, St Kilda, Port Phillip, Victoria 3182 Australia",-37.868007127134,144.978983441824,19956,Balaclava,1.286,>1000 m
+Flora Indian Restaurant,4,$,235,"238A Flinders St, Melbourne, Victoria 3000 Australia",-37.817517643709,144.966493400264,19854,Flinders Street,0.097,<=250 m
+Kiwi Fish & Chips,4.5,$$ - $$$,89,"412-422 Victoria Pde Shop 9B, Melbourne, Victoria 3002 Australia",-37.809620675542,144.985273054328,19977,North Richmond,0.641,500–1000 m
+Mesh - Crown Promenade,4,$$ - $$$,432,"8 Whiteman Street, Southbank 8 Whiteman St, Southbank, Melbourne, Victoria 3006 Australia",-37.824313397437,144.956855720355,22180,Southern Cross,0.855,500–1000 m
+Claypots Evening Star,4.5,$$ - $$$,137,"Corner Cecil and York Streets South Melbourne Market, Melbourne, Victoria 3205 Australia",-37.831573843878,144.957039116396,22180,Southern Cross,1.595,>1000 m
+Radii Restaurant & Bar,4,$$$$,211,"1 Parliament Pl, Melbourne, Victoria 3002 Australia",-37.811372660944,144.975281490467,19843,Parliament,0.211,<=250 m
+Riverland,4,$$ - $$$,317,"Vaults 1-9 Federation Wharf Federation Square, Melbourne, Victoria 3000 Australia",-37.817539478567,144.969968034406,19854,Flinders Street,0.277,250–500 m
+Saxe,4.5,$$ - $$$,52,"211 Queen St, Melbourne, Victoria 3000 Australia",-37.81390948585,144.95991545029,19841,Flagstaff,0.431,250–500 m
+Little Africa,4.5,$$ - $$$,58,"358 Victoria St, Melbourne, Victoria 3051 Australia",-37.805490031748,144.954345424173,19841,Flagstaff,0.731,500–1000 m
+Plus 5,4,$$ - $$$,233,"37 South Wharf Promenade, Melbourne, Victoria 3008 Australia",-37.82400498531,144.948477924312,22180,Southern Cross,0.722,500–1000 m
+A25 Pizzeria CBD,4.5,$$ - $$$,77,"Taylors College 399 Lonsdale St, Melbourne, Victoria 3000 Australia",-37.812972389074,144.960651968122,19842,Melbourne Central,0.378,250–500 m
+Hooks At The Yarra,4.5,$$ - $$$,130,"Yarra's Edge 50 River Esp Docklands, Melbourne, Victoria 3008 Australia",-37.824934370734,144.947645433688,22180,Southern Cross,0.846,500–1000 m
+Dish & Spoon,4.5,$$ - $$$,72,"122 Highfield Rd, Camberwell, Victoria 3124 Australia",-37.837891996763,145.084511016069,19850,Hartwell,1.038,>1000 m
+Khao San Road,4.5,$$ - $$$,114,"696 Mt Alexander Rd, Moonee Ponds, Moonee Valley, Victoria 3039 Australia",-37.7686560097,144.925603962003,20038,Moonee Ponds,0.654,500–1000 m
+Garden State Hotel,4,$$ - $$$,299,"101 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.815408966418,144.971051982125,19854,Flinders Street,0.482,250–500 m
+QT Kitchen,4.5,$$ - $$$,71,"12 High St, Glen Iris, Stonnington, Victoria 3146 Australia",-37.861873837124,145.064847238858,19835,Glen Iris,0.648,500–1000 m
+Kri Kri,4,$$ - $$$,370,"39-41 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.810815432021,144.971497061183,19843,Parliament,0.127,<=250 m
+Naked in the Sky,4.5,$$ - $$$,130,"285 Brunswick St, Fitzroy, Yarra, Victoria 3065 Australia",-37.798850432876,144.978183389166,19975,Victoria Park,1.43,>1000 m
+Bahari the Hellenic Palate,4.5,$$ - $$$,147,"179 Swan St, Richmond, Yarra, Victoria 3121 Australia",-37.825482966297,144.997580957132,19907,East Richmond,0.112,<=250 m
+Saint & Rogue,4,$$ - $$$,127,"582 Little Collins St, Melbourne, Victoria 3000 Australia",-37.817435249601,144.955365250332,22180,Southern Cross,0.352,250–500 m
+Little Vietnam 504,4.5,$$ - $$$,145,"504 Hampton St, Hampton, Bayside, Victoria 3188 Australia",-37.934912987023,145.003190042918,19949,Hampton,0.373,250–500 m
+Mr. Miyagi,4,$$ - $$$,401,"99 Chapel St, Windsor, Stonnington, Victoria 3181 Australia",-37.854224009371,144.992719034195,19957,Windsor,0.212,<=250 m
+The Crafty Squire,4,$$ - $$$,363,"127 Russell St, Melbourne, Victoria 3000 Australia",-37.813665488648,144.968214624081,19843,Parliament,0.504,500–1000 m
+Abla's,4,$$ - $$$,204,"109 Elgin St, Melbourne, Victoria 3053 Australia",-37.797763006667,144.971058017095,19843,Parliament,1.487,>1000 m
+Spring Street Grocer Cafe,4.5,$$ - $$$,96,"157 Spring St, Melbourne, Victoria 3000 Australia",-37.811010395089,144.972592492109,19843,Parliament,0.028,<=250 m
+Franco-Belge,4.5,$$ - $$$,74,"9 Evans Place, Hawthorn East, Melbourne, Victoria 3123 Australia",-37.830054121013,145.055703588322,19853,Camberwell,0.468,250–500 m
+Left Bank Melbourne,3.5,$$ - $$$,841,"1 Southbank Boulevard, Melbourne, Victoria 3006 Australia",-37.820938088848,144.962798824982,19854,Flinders Street,0.469,250–500 m
+French Saloon,4.5,$$$$,92,"46 Hardware Lane First Floor, Melbourne, Victoria 3000 Australia",-37.81355535044,144.961322436557,19842,Melbourne Central,0.417,250–500 m
+The Moat,4,$$ - $$$,123,"176 Little Lonsdale St, Melbourne, Victoria 3000 Australia",-37.810056492598,144.964315111267,19842,Melbourne Central,0.152,<=250 m
+The League of Honest Coffee,4.5,$$ - $$$,94,"8 Exploration Lane, Melbourne, Victoria 3000 Australia",-37.809194204309,144.968465829719,19843,Parliament,0.442,250–500 m
+The Louden Kitchen & Grill,4,$$ - $$$,157,"265 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.812819922256,144.964668240847,19842,Melbourne Central,0.369,250–500 m
+Hot Poppy,4.5,$$ - $$$,74,"9 Errol St, Melbourne, Victoria 3051 Australia",-37.804762943557,144.949047642271,19973,North Melbourne,0.684,500–1000 m
+The Essence,4,$$ - $$$,240,"Corner Exhibition & Lonsdale Streets Melbourne Marriott Hotel, Melbourne, Victoria 3000 Australia",-37.810015505091,144.969246101086,19843,Parliament,0.342,250–500 m
+Bratwurst Shop & Co,4.5,$,73,"Therry St. Queen Victoria Market Shop 99-100, Melbourne, Victoria 3000 Australia",-37.806335933416,144.958210152089,19842,Melbourne Central,0.556,500–1000 m
+Rocket Burger & Fries,4.5,$,131,"Cnr Flinders & Elizabeth Streets 26 Elizabeth St, Melbourne, Victoria 3000 Australia",-37.817650287327,144.965005780088,19854,Flinders Street,0.187,<=250 m
+Chiba Japanese Restaurant,4.5,$$ - $$$,185,"41 Hall St, Moonee Ponds, Moonee Valley, Victoria 3039 Australia",-37.766165159534,144.921791537163,20038,Moonee Ponds,0.237,<=250 m
+Dock 37 Bar and Kitchen,4,$$ - $$$,177,"2 Convention Centre Pl South Wharf, Melbourne, Victoria 3006 Australia",-37.825026613579,144.951052761148,22180,Southern Cross,0.789,500–1000 m
+Salona Restaurant,4.5,$$ - $$$,126,"260A Swan Street, Richmond, Melbourne, Victoria 3121 Australia",-37.825967607939,144.999001270625,19907,East Richmond,0.177,<=250 m
+Shakahari too,4.5,$$ - $$$,89,"225 Clarendon St, Melbourne, Victoria 3205 Australia",-37.8312039924,144.960017960966,19854,Flinders Street,1.559,>1000 m
+Aix Cafe,4.5,$,85,"24 Centre Pl, Melbourne, Victoria 3000 Australia",-37.816712100905,144.965638865235,19854,Flinders Street,0.212,<=250 m
+Cochin Wine Bar & Restaurant,4.5,$$ - $$$,118,"256 Swan St, Richmond, Yarra, Victoria 3121 Australia",-37.825930979022,144.998803038615,19907,East Richmond,0.161,<=250 m
+Cafe Issus,4,$$ - $$$,264,"8-10 Centre Pl, Melbourne, Victoria 3000 Australia",-37.816712100905,144.965638865235,19854,Flinders Street,0.212,<=250 m
+The Tippler & Co,4.5,$$ - $$$,121,"58 Wellington Pde, Melbourne, Victoria 3002 Australia",-37.816514790904,144.988243433176,19978,West Richmond,0.329,250–500 m
+Philhellene,4,$$ - $$$,187,"551-553 Mount Alexander Rd, Moonee Ponds, Moonee Valley, Victoria 3039 Australia",-37.769391982709,144.925446968957,20038,Moonee Ponds,0.688,500–1000 m
+Pretty Boy Italian Steakhouse,4.5,$$ - $$$,73,"399 Little Lonsdale Street Level 1, Melbourne, Victoria 3000 Australia",-37.811922429973,144.960090464428,19842,Melbourne Central,0.311,250–500 m
+Elephant and Wheelbarrow,3.5,$$ - $$$,582,"94-96 Bourke St, Melbourne, Victoria 3000 Australia",-37.811943552369,144.970267016892,19843,Parliament,0.252,250–500 m
+Plain Sailing,4.5,$$ - $$$,85,"144 Ormond Rd, Elwood, Port Phillip, Victoria 3184 Australia",-37.886400207824,144.988930078684,19954,Elsternwick,1.066,>1000 m
+Little Tommy Tucker Cafe,4.5,$$ - $$$,153,"432 Centre Rd, Bentleigh, Glen Eira, Victoria 3204 Australia",-37.918530012443,145.038044007978,19939,Bentleigh,0.154,<=250 m
+Lentil As Anything St Kilda,4.5,$,219,"41 Blessington St, St Kilda, Port Phillip, Victoria 3182 Australia",-37.870436998955,144.981043965081,19956,Balaclava,1.1,>1000 m
+Yassas - The Greek Way,4,$$ - $$$,399,"4-9/3 Southgate Ave Southgate Plaza, Melbourne, Victoria 3006 Australia",-37.8202285,144.9665245,19854,Flinders Street,0.217,<=250 m
+Locanda Restaurant & Public Bar,4,$$ - $$$,369,"186 Exhibition St, Melbourne, Victoria 3000 Australia",-37.811289261007,144.970472038244,19843,Parliament,0.216,<=250 m
+Pud Thai vs Pho,4.5,$,103,"60 Siddeley St, Melbourne, Victoria 3008 Australia",-37.822692127816,144.95251816928,22180,Southern Cross,0.538,500–1000 m
+Sake Restaurant & Bar,4,$$ - $$$,181,"121 Flinders Lane, Melbourne, Victoria 3000 Australia",-37.815578825686,144.970468182569,19854,Flinders Street,0.432,250–500 m
+Swaad India's Zest,4.5,$$ - $$$,81,"Shop 9 271-275 Centre Rd, Bentleigh, Glen Eira, Victoria 3204 Australia",-37.917531015313,145.032945966829,19939,Bentleigh,0.355,250–500 m
+Cafe Keyif,4.5,$$ - $$$,138,"U 1 550 Flinders St Entry Through Downie Street, Melbourne, Victoria 3000 Australia",-37.820555077782,144.956025492845,22180,Southern Cross,0.499,250–500 m
+Half Moon Cafe,5,$,65,"13 Victoria St Shop 13, Coburg, Moreland, Victoria 3058 Australia",-37.74328038457,144.96580641948,19965,Coburg,0.241,<=250 m
+Brighton Soul,4.5,$,131,"129 Church Street, Brighton, Bayside, Victoria 3186 Australia",-37.915484992748,144.996401036622,19951,Middle Brighton,0.04,<=250 m
+Bistro La Provence,4.5,$$ - $$$,146,"234 Esplanade, Brighton, Bayside, Victoria 3186 Australia",-37.909628850366,144.986618852702,19951,Middle Brighton,1.047,>1000 m
+Avatar Indian Cuisine,4.5,$$ - $$$,88,"291 Whitehorse Rd Opposite Balwyn Park, Balwyn, Boroondara, Victoria 3103 Australia",-37.812367006118,145.078787014391,19893,Canterbury,1.364,>1000 m
+Paper Plate Restaurant,4.5,$$ - $$$,65,"318 Bridge Rd, Richmond, Yarra, Victoria 3121 Australia",-37.819071983834,145.001930997242,19907,East Richmond,0.92,500–1000 m
+Jim's Greek Tavern,4,$$ - $$$,457,"32 Johnston St, Collingwood, Yarra, Victoria 3066 Australia",-37.79895399129,144.985812010703,19975,Victoria Park,0.759,500–1000 m
+Archie's All Day,4.5,$$ - $$$,162,"189 Gertrude St, Fitzroy, Yarra, Victoria 3065 Australia",-37.80598070836,144.980919326181,19843,Parliament,0.902,500–1000 m
+Sapa Hills Restaurant,4.5,$$ - $$$,196,"112 Hopkins St, Footscray, Maribyrnong, Victoria 3011 Australia",-37.799807981495,144.901619984257,20025,Footscray,0.198,<=250 m
+Ginza Teppanyaki,4,$$ - $$$,229,"139 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.812446759926,144.968611507196,19843,Parliament,0.408,250–500 m
+American Doughnut Kitchen,4.5,$,100,"Queen St, Melbourne, Victoria 3000 Australia",-37.811972890229,144.95924270884,19841,Flagstaff,0.315,250–500 m
+Sir Charles,4.5,$$ - $$$,133,"121 Johnston St, Fitzroy, Yarra, Victoria 3065 Australia",-37.79822334079,144.978927366891,19975,Victoria Park,1.368,>1000 m
+Eliana Lulu,4,$$ - $$$,166,"7-9 Centre Pl, Melbourne, Victoria 3000 Australia",-37.816610470329,144.965533337074,19854,Flinders Street,0.227,<=250 m
+Mediterraneo Charcoal Restaurant,4.5,$$ - $$$,171,"116 Bridport St, Albert Park, Port Phillip, Victoria 3206 Australia",-37.840015635751,144.95623026274,22180,Southern Cross,2.491,>1000 m
+Dumplings Plus,4,$,264,"269 Swanston St, Melbourne, Victoria 3000 Australia",-37.811953987839,144.964615015762,19842,Melbourne Central,0.286,250–500 m
+Curry Vault Indian Restaurant and Bar,4,$$ - $$$,300,"18-20 Bank Pl, Melbourne, Victoria 3000 Australia",-37.816429379311,144.960448958427,19854,Flinders Street,0.609,500–1000 m
+The Point Restaurant,4.5,$$$$,242,"Aquatic Drive Albert Park Lake, Albert Park, Port Phillip, Victoria 3206 Australia",-37.8410805081,144.966912848484,19958,Prahran,2.223,>1000 m
+Massi,4.5,$$ - $$$,83,"445 Little Collins St, Melbourne, Victoria 3000 Australia",-37.817137356762,144.960120974556,19854,Flinders Street,0.615,500–1000 m
+Shark Fin Inn,3.5,$$ - $$$,586,"50 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.810721428977,144.971029267167,19843,Parliament,0.169,<=250 m
+The Crane Restaurant,4,$$ - $$$,194,"212 Little Bourke St, Melbourne, Victoria 3000 Australia",-37.812100000592,144.966315033364,19842,Melbourne Central,0.406,250–500 m
+Daughter in Law,4,$$ - $$$,113,"37 Little Bourke St Ground Floor, Melbourne, Victoria 3000 Australia",-37.810815432021,144.971497061183,19843,Parliament,0.127,<=250 m
+Little Cupcakes,4.5,$,127,"Shop 6/181 William St, Goldsborough Lane, Melbourne, Victoria 3000 Australia",-37.815580418248,144.957768593429,19841,Flagstaff,0.441,250–500 m
+Hawker Boys,4.5,$,70,"85 Hardware Lane, Melbourne, Victoria 3000 Australia",-37.812972389074,144.960651968122,19842,Melbourne Central,0.378,250–500 m
+Carlton Curry House,4.5,$$ - $$$,204,"108 Lygon St, Melbourne, Victoria 3053 Australia",-37.804516012689,144.966547966454,19842,Melbourne Central,0.696,500–1000 m
+Anchovy,4.5,$$ - $$$,93,"338 Bridge Rd, Richmond, Yarra, Victoria 3121 Australia",-37.819137991322,145.002632981633,19907,East Richmond,0.944,500–1000 m
+Sons of Mary,4.5,$$ - $$$,233,"14 Spink St, Brighton, Bayside, Victoria 3186 Australia",-37.897926037152,145.004379267341,19953,Gardenvale,0.138,<=250 m
+Atrium Bar On 35,4.5,$$$$,83,"25 Collins St, Melbourne, Victoria 3000 Australia",-37.813892847772,144.973029775998,19843,Parliament,0.316,250–500 m
+Sakura Kaiten,4.5,$$ - $$$,132,"60 Little Collins St, Melbourne, Victoria 3000 Australia",-37.812576637516,144.972229890978,19843,Parliament,0.18,<=250 m
+The Hardware Club,5,$$ - $$$,57,"43 Hardware Lane, Melbourne, Victoria 3000 Australia",-37.813642103138,144.961126886756,19842,Melbourne Central,0.431,250–500 m
+Cornish Arms Hotel,4,$$ - $$$,184,"163A Sydney Rd, Brunswick, Moreland, Victoria 3056 Australia",-37.773417014523,144.960869981423,19969,Jewell,0.257,250–500 m
+D.O.C,4,$$ - $$$,262,"326 Lygon St Carlton, Melbourne, Victoria 3053 Australia",-37.799296433944,144.967449943054,19842,Melbourne Central,1.258,>1000 m
+Cafe Cavallino,4,$$ - $$$,260,"181-183 Lygon Street, Melbourne, Victoria Australia",-37.801506616083,144.966537572894,19842,Melbourne Central,1,500–1000 m
+Jungle Juice Bar,4.5,$,78,"20 Centre Pl, Melbourne, Victoria 3000 Australia",-37.816712100905,144.965638865235,19854,Flinders Street,0.212,<=250 m
+Three Bags Full Cafe,4.5,$$ - $$$,230,"Corner of Nicholson St and Mollison St,, Abbotsford, Yarra, Victoria 3067 Australia",-37.807205094866,144.996441521215,19976,Collingwood,0.38,250–500 m
+Chinta Ria Soul,4,$$ - $$$,247,"94 Acland St, St Kilda, Port Phillip, Victoria 3182 Australia",-37.867736014476,144.979222996616,19956,Balaclava,1.269,>1000 m
+Atta Restaurant,4.5,$$ - $$$,102,"159-161 Victoria Ave Melbourne, Albert Park, Port Phillip, Victoria 3206 Australia",-37.846727612357,144.949396664719,22180,Southern Cross,3.206,>1000 m
+Park Street Pasta & Wine,4.5,$$ - $$$,91,"268 Park St South Melbourne, Melbourne, Victoria 3205 Australia",-37.835436979232,144.960076969564,19854,Flinders Street,1.999,>1000 m
+The Pancake Parlour,4,$$ - $$$,323,"Centrepoint Arcade, Bourke Street Mall Centrepoint Arcade, Bourke Street Mall, Down the Escalators, Between Sportsgirl and Jetty Surf, Melbourne, Victoria 3000 Australia",-37.8153434,144.9632276,19854,Flinders Street,0.465,250–500 m
+Bella Cosi,4.5,$$ - $$$,71,"71 Beach St, Melbourne, Victoria 3207 Australia",-37.841859235355,144.936140936304,22180,Southern Cross,2.979,>1000 m
+At Ease - Easy Thai,4.5,$,75,"195 Lonsdale St, Melbourne, Victoria 3000 Australia",-37.811240017326,144.966610998365,19842,Melbourne Central,0.381,250–500 m
+Lolo and Wren,4.5,$$ - $$$,84,"484 Albion St West Brunswick, Melbourne, Victoria Australia",-37.75824623078,144.939993091365,19967,Anstey,1.849,>1000 m
+Thai city,4.5,$$ - $$$,72,"124 Lygon Street Carlton, Melbourne, Victoria 3000 Australia",-37.80414800523,144.966614015851,19842,Melbourne Central,0.734,500–1000 m
+Tokui Sushi,5,$,50,"260 Lonsdale St, Melbourne, Victoria 3000 Australia",-37.811427436681,144.96437973574,19842,Melbourne Central,0.228,<=250 m
