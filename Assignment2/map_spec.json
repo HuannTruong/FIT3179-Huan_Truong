@@ -19,7 +19,7 @@
     },
     {
       "data": {
-        "url": "output.json",
+        "url": "data/output.json",
         "format": { "type": "topojson", "feature": "train_lines_only_noR" }
       },
       "mark": { "type": "geoshape", "fill": null, "stroke": "#404040", "strokeWidth": 1.2 }
