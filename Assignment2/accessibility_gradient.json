@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "Accessibility Gradient — Distance vs Annual Passengers", "anchor": "start"},
+  "width": 820,
+  "height": 420,
+  "data": { "url": "data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+
+  "transform": [
+    { "calculate": "toNumber(datum.Stop_lat)",  "as": "lat" },
+    { "calculate": "toNumber(datum.Stop_long)", "as": "lon" },
+    { "calculate": "toNumber(datum.Pax_annual)", "as": "pax" },
+
+    { "calculate": "0.017453292519943295", "as": "deg2rad" },
+    { "calculate": "(datum.lat - (-37.8183)) * datum.deg2rad", "as": "dLat" },
+    { "calculate": "(datum.lon - 144.9671) * datum.deg2rad",   "as": "dLon" },
+    { "calculate": "(-37.8183) * datum.deg2rad",               "as": "lat1r" },
+    { "calculate": "datum.lat * datum.deg2rad",                "as": "lat2r" },
+    { "calculate": "pow(sin(datum.dLat/2),2) + cos(datum.lat1r)*cos(datum.lat2r)*pow(sin(datum.dLon/2),2)", "as": "a" },
+    { "calculate": "2 * asin(min(1, sqrt(datum.a)))", "as": "c" },
+    { "calculate": "6371 * datum.c", "as": "distance_km" },
+
+    { "filter": "isFinite(datum.distance_km) && isFinite(datum.pax) && datum.pax > 0" },
+    { "filter": "datum.distance_km <= 40" }
+  ],
+
+  "resolve": { "scale": { "y": "independent" } },
+
+  "layer": [
+    {
+      "mark": { "type": "point", "filled": true, "size": 48, "opacity": 0.8 },
+      "encoding": {
+        "x": {
+          "field": "distance_km", "type": "quantitative",
+          "title": "Distance from Flinders Street (km)"
+        },
+        "y": {
+          "field": "pax", "type": "quantitative",
+          "title": "Annual passengers",
+          "scale": { "type": "log", "domainMin": 1000 },
+          "axis": { "format": "~s" }
+        },
+        "color": { "value": "#3288bd" },
+        "tooltip": [
+          { "field": "Stop_name", "title": "Station" },
+          { "field": "distance_km", "title": "Distance (km)", "format": ".2f" },
+          { "field": "pax", "title": "Annual passengers", "format": "," }
+        ]
+      }
+    },
+    {
+    "transform": [
+    { "loess": "pax", "on": "distance_km", "bandwidth": 0.5 }
+    ],
+    "mark": { "type": "line", "stroke": "#d53e4f", "strokeWidth": 2 },
+      "encoding": {
+        "x": { "field": "distance_km", "type": "quantitative" },
+        "y": {
+          "field": "pax", "type": "quantitative",
+          "scale": { "type": "linear" }
+        }
+      }
+    }
+  ],
+
+  "config": { "view": { "stroke": null } }
+}
