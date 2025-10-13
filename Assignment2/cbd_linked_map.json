@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "Melbourne CBD — City Loop Stations ↔ Nearby Restaurants", "anchor": "start"},
+  "width": 720,
+  "height": 560,
+
+  "projection": { "type": "mercator", "center": [144.965, -37.815], "scale": 550000 },
+
+  "layer": [
+    {
+      "data": { "url": "./output.json", "format": { "type": "topojson", "feature": "vic_localities" } },
+      "mark": { "type": "geoshape", "fill": "#f7f7f7", "stroke": "#d3d3d3", "strokeWidth": 0.7 }
+    },
+
+    {
+      "data": { "url": "./train_lines_only_noR.json", "format": { "type": "topojson", "feature": "train_lines_only_noR" } },
+      "mark": { "type": "geoshape", "fill": null, "stroke": "#444", "strokeWidth": 1.2 }
+    },
+
+    {
+      "data": { "url": "./data/restaurants_with_nearest_station.csv" },
+      "transform": [
+        { "calculate": "toNumber(datum.rest_long)", "as": "lon" },
+        { "calculate": "toNumber(datum.rest_lat)",  "as": "lat"  },
+        { "filter": "isFinite(datum.lon) && isFinite(datum.lat)" },
+        { "filter": "indexof(['Flinders Street','Southern Cross','Flagstaff','Melbourne Central','Parliament'], datum.nearest_station_name) >= 0" },
+        { "filter": "datum.lon >= 144.935 && datum.lon <= 144.995 && datum.lat >= -37.835 && datum.lat <= -37.795" }
+      ],
+      "params": [
+        {
+          "name": "restSel_cbd",
+          "select": { "type": "point", "fields": ["nearest_station_name"], "on": "click", "clear": "dblclick" }
+        }
+      ],
+      "mark": { "type": "circle", "opacity": 0.9 },
+      "encoding": {
+        "longitude": { "field": "lon" },
+        "latitude":  { "field": "lat" },
+        "size": { "value": 40 },
+        "color": { "value": "#e66101" },
+        "opacity": {
+          "condition": [
+            { "param": "restSel_cbd",    "value": 0.95 },
+            { "param": "stationSel_cbd", "value": 0.95 }
+          ],
+          "value": 0.20
+        },
+        "tooltip": [
+          { "field": "name", "title": "Restaurant" },
+          { "field": "priceLevel", "title": "Price" },
+          { "field": "nearest_station_name", "title": "Nearest station" }
+        ]
+      }
+    },
+
+    {
+      "data": { "url": "./data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+      "transform": [
+        { "calculate": "toNumber(datum.Stop_long)", "as": "lon" },
+        { "calculate": "toNumber(datum.Stop_lat)",  "as": "lat"  },
+        { "filter": "indexof(['Flinders Street','Southern Cross','Flagstaff','Melbourne Central','Parliament'], datum.Stop_name) >= 0" },
+        { "calculate": "datum.Stop_name", "as": "nearest_station_name" }
+      ],
+      "params": [
+        {
+          "name": "stationSel_cbd",
+          "select": { "type": "point", "fields": ["nearest_station_name"], "on": "click", "clear": "dblclick" }
+        }
+      ],
+      "mark": { "type": "circle", "stroke": "white", "strokeWidth": 1.2 },
+      "encoding": {
+        "longitude": { "field": "lon" },
+        "latitude":  { "field": "lat" },
+        "size": {
+          "condition": [
+            { "param": "restSel_cbd",    "value": 220 },
+            { "param": "stationSel_cbd", "value": 220 }
+          ],
+          "value": 150
+        },
+        "color": { "value": "#2b83ba" },
+        "opacity": {
+          "condition": [
+            { "param": "stationSel_cbd", "value": 1.0 },
+            { "param": "restSel_cbd",    "value": 1.0 }
+          ],
+          "value": 0.35
+        },
+        "tooltip": [
+          { "field": "Stop_name", "title": "Station" },
+          { "field": "Pax_annual", "title": "Annual passengers", "format": "," }
+        ]
+      }
+    },
+
+    {
+      "data": { "url": "./data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+      "transform": [
+        { "calculate": "toNumber(datum.Stop_long)", "as": "lon" },
+        { "calculate": "toNumber(datum.Stop_lat)",  "as": "lat"  },
+        { "filter": "indexof(['Flinders Street','Southern Cross','Flagstaff','Melbourne Central','Parliament'], datum.Stop_name) >= 0" }
+      ],
+      "mark": { "type": "text", "dx": 6, "dy": -6, "fontSize": 11, "fontWeight": "bold", "fill": "#2b83ba" },
+      "encoding": { "longitude": { "field": "lon" }, "latitude": { "field": "lat" }, "text": { "field": "Stop_name" } }
+    }
+  ]
+}
