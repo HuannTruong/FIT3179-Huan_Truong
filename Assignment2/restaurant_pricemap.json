@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "Top 500 Restaurants in Melbourne", "anchor": "start", "fontSize": 20,
+    "fontWeight": "bold"},
+  "width": 600,
+  "height": 650,
+
+  "projection": {
+    "type": "mercator",
+    "center": [145.00, -37.84],
+    "scale": 130000
+  },
+
+  "params": [
+    {
+      "name": "priceSel",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "name": "Price: ",
+        "options": ["All", "$", "$$ - $$$", "$$$$"]
+      }
+    }
+  ],
+
+  "layer": [
+    {
+      "data": {
+        "url": "output.json",
+        "format": { "type": "topojson", "feature": "vic_localities" }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f7f7f7",
+        "stroke": "#c9c9c9",
+        "strokeWidth": 0.75
+      }
+    },
+
+    {
+      "data": { "graticule": { "step": [10, 10] } },
+      "mark": { "type": "geoshape", "fill": null, "stroke": "#eeeeee" }
+    },
+
+    {
+      "data": { "url": "data/restaurants_with_nearest_station.csv" },
+      "transform": [
+        { "calculate": "toNumber(datum.rest_long)", "as": "lonNum" },
+        { "calculate": "toNumber(datum.rest_lat)", "as": "latNum" },
+        { "filter": "isFinite(datum.lonNum) && isFinite(datum.latNum)" },
+        {
+          "filter": "priceSel === 'All' || (priceSel === '$' && datum.priceLevel === '$') || (priceSel === '$$ - $$$' && datum.priceLevel === '$$ - $$$') || (priceSel === '$$$$' && datum.priceLevel === '$$$$')"
+        }
+      ],
+      "mark": { "type": "circle", "opacity": 0.9 },
+      "encoding": {
+        "longitude": { "field": "lonNum", "type": "quantitative" },
+        "latitude": { "field": "latNum", "type": "quantitative" },
+        "size": { "value": 40 },
+        "color": { "value": "#e66101" },
+        "tooltip": [
+          { "field": "name", "title": "Restaurant" },
+          { "field": "priceLevel", "title": "Price" },
+          { "field": "nearest_station_name", "title": "Nearest Station" }
+        ]
+      }
+    },
+
+    {
+  "data": {
+    "values": [
+      { "lon": 145.061756, "lat": -37.763581 }, 
+      { "lon": 144.965, "lat": -37.815 }  
+    ]
+  },
+  "mark": { "type": "line", "stroke": "#d53e4f", "strokeWidth": 2, "opacity": 0.9 },
+  "encoding": {
+    "longitude": { "field": "lon" },
+    "latitude":  { "field": "lat" }
+  }
+},
+{
+  "data": {
+    "values": [
+      {
+        "lon": 145.12,
+        "lat": -37.76,
+        "label": "Most ‘Top 500’ restaurants cluster\nin the CBD vicinity"
+      }
+    ]
+  },
+  "mark": {
+    "type": "text",
+    "align": "right",
+    "baseline": "top",
+    "dx": 0, "dy": 0,
+    "fontSize": 12,
+    "fontWeight": "bold",
+    "fill": "#333"
+  },
+  "encoding": {
+    "longitude": { "field": "lon" },
+    "latitude":  { "field": "lat" },
+    "text":      { "field": "label" },
+    "tooltip":   [{ "field": "label", "title": "Note" }]
+  }
+}
+
+  ]
+}
