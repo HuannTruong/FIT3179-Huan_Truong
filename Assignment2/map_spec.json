@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Metropolitan Melbourne Train Stations Passenger Numbers (2024-2025)",
+    "anchor": "start",
+    "fontSize": 20,
+    "fontWeight": "bold"
+  },
+  "width": 800,
+  "height": 650,
+  "projection": { "type": "mercator" },
+  "layer": [
+    {
+      "data": {
+        "url": "output.json",
+        "format": { "type": "topojson", "feature": "vic_localities" }
+      },
+      "mark": { "type": "geoshape", "fill": "#f7f7f7", "stroke": "#c9c9c9", "strokeWidth": 0.75 }
+    },
+    {
+      "data": {
+        "url": "output.json",
+        "format": { "type": "topojson", "feature": "train_lines_only_noR" }
+      },
+      "mark": { "type": "geoshape", "fill": null, "stroke": "#404040", "strokeWidth": 1.2 }
+    },
+    {
+  "data": { "url": "data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+  "transform": [
+    { "calculate": "toNumber(datum.Stop_long)", "as": "lon" },
+    { "calculate": "toNumber(datum.Stop_lat)",  "as": "lat" },
+    { "calculate": "toNumber(datum.Pax_annual)", "as": "pax" },
+    { "calculate": "datum.pax < 1e6 ? '<1M' : datum.pax < 5e6 ? '1-5M' : datum.pax < 10e6 ? '5-10M' : datum.pax < 20e6 ? '10-20M' : '20M+'", "as": "pax_band" }
+
+  ],
+  "mark": { "type": "circle", "opacity": 0.9, "stroke": "white", "strokeWidth": 0.6 },
+  "encoding": {
+    "longitude": { "field": "lon", "type": "quantitative" },
+    "latitude":  { "field": "lat", "type": "quantitative" },
+
+    "size": {
+  "field": "pax_band",
+  "type": "nominal",
+  "sort": ["<1M", "1-5M", "5-10M", "10-20M", "20M+"],
+  "scale": { "range": [28, 60, 110, 170, 240] },
+  "legend": { "title": "Passengers (annual)" }
+}
+,
+
+    "color": { "value": "#2b83ba" },
+
+    "tooltip": [
+      { "field": "Stop_name", "title": "Station" },
+      { "field": "pax_band", "title": "Passenger band" },
+      { "field": "Pax_annual", "title": "Annual", "format": "," },
+      { "field": "Pax_AM_peak", "title": "AM peak", "format": "," },
+      { "field": "Pax_PM_peak", "title": "PM peak", "format": "," }
+    ]
+  }
+}
+  ]
+}
