@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Passenger Volume vs Nearby Restaurants",
+    "subtitle": "Annual passengers (log) vs count of nearby restaurants",
+    "anchor": "start",
+    "fontSize": 18,
+    "fontWeight": "bold"
+  },
+  "width": 800,
+  "height": 420,
+
+  "data": { "url": "./data/restaurants_with_nearest_station.csv" },
+
+  "transform": [
+    { "calculate": "datum.priceLevel=='$'?1 : datum.priceLevel=='$$ - $$$'?2.5 : datum.priceLevel=='$$$$'?4 : null", "as": "price_num" },
+    { "filter": "isFinite(datum.price_num)" },
+
+    {
+      "aggregate": [
+        {"op": "count", "as": "rest_count"},
+        {"op": "mean",  "field": "price_num", "as": "avg_price_num"}
+      ],
+      "groupby": ["nearest_station_name"]
+    },
+
+    { "calculate": "datum.avg_price_num <= 1.5 ? '$' : (datum.avg_price_num <= 3 ? '$$ - $$$' : '$$$$')", "as": "price_band" },
+
+    {
+      "lookup": "nearest_station_name",
+      "from": {
+        "data": { "url": "./data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+        "key": "Stop_name",
+        "fields": ["Pax_annual"]
+      }
+    },
+
+    { "calculate": "toNumber(datum.Pax_annual)", "as": "pax" },
+    { "filter": "isFinite(datum.pax) && datum.pax > 0" }
+  ],
+
+  "mark": { "type": "point", "filled": true, "size": 90, "opacity": 0.85, "stroke": "white", "strokeWidth": 0.7 },
+
+  "encoding": {
+    "x": {
+      "field": "pax",
+      "type": "quantitative",
+      "title": "Annual passengers (log)",
+      "scale": { "type": "log", "domainMin": 10000 },
+      "axis": { "format": "~s", "grid": false }
+    },
+    "y": {
+      "field": "rest_count",
+      "type": "quantitative",
+      "title": "Number of nearby restaurants",
+      "scale": { "nice": true, "domain": [0, 120] },
+      "axis": { "grid": true }
+    },
+    "color": {
+      "field": "price_band",
+      "type": "nominal",
+      "title": "Typical price level",
+      "scale": { "domain": ["$", "$$ - $$$", "$$$$"], "range": ["#66bd63", "#fdae61", "#d73027"] },
+      "legend": { "orient": "right" }
+    },
+    "tooltip": [
+      { "field": "nearest_station_name", "title": "Station" },
+      { "field": "pax", "title": "Annual passengers", "format": "," },
+      { "field": "rest_count", "title": "Nearby restaurants" },
+      { "field": "avg_price_num", "title": "Avg price (1–4)", "format": ".1f" },
+      { "field": "price_band", "title": "Price band" }
+    ]
+  },
+
+  "config": {
+    "view": { "stroke": null },
+    "axis": { "labelFontSize": 11, "titleFontSize": 12 }
+  }
+}
