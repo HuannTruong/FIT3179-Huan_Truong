@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Week 10 Homework</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.24.0"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Melbourne Train & Restaurant Insights (2024–2025) - FIT3179 Assignment 2</h1>
+    <p>By Huan Truong (33899886)</p>
+  </header>
+
+  <h2>Train Stations Map</h2>
+  <div id="symbol_map" class="vis"></div>
+  <div id="err1" class="err"></div>
+
+  <h2>Top 10 Stations — AM vs PM Peak</h2>
+  <div id="top10_bars" class="vis"></div>
+  <div id="errBars" class="err"></div>
+
+  <h2>Restaurants Map</h2>
+  <div id="restaurant_map" class="vis"></div>
+  <div id="err2" class="err"></div>
+
+  <script>
+    vegaEmbed('#symbol_map', './map_spec.json', {actions:false})
+      .catch(err => { const e=document.querySelector('#err1'); e.style.display='block'; e.textContent = err; });
+
+    vegaEmbed('#top10_bars', './barchart_topstations.json', {actions:false})
+      .catch(err => { const e=document.querySelector('#errBars'); e.style.display='block'; e.textContent = err; });
+
+    vegaEmbed('#restaurant_map', './restaurant_pricemap.json', {actions:false})
+      .catch(err => { const e=document.querySelector('#err2'); e.style.display='block'; e.textContent = err; });
+  </script>
+
+  <h2>Accessibility Gradient</h2>
+  <div id="access" class="vis"></div>
+  <div id="err3" class="err"></div>
+  <script>
+    vegaEmbed('#access', './accessibility_gradient.json', {actions:false})
+      .catch(err => { const e=document.querySelector('#err3'); e.style.display='block'; e.textContent = err; });
+  </script>
+
+  <h2>CBD Restaurants & City Loop (linked)</h2>
+  <div id="cbd" class="vis"></div>
+  <div id="err4" class="err"></div>
+  <script>
+    vegaEmbed('#cbd', './cbd_linked_map.json', {actions:false})
+      .catch(err => { const e=document.querySelector('#err4'); e.style.display='block'; e.textContent = err; });
+  </script>
+
+  <h2>Passenger Volume vs Nearby Restaurants</h2>
+  <div id="scatter" class="vis"></div>
+  <div id="errscatter" class="err"></div>
+  <script>
+    vegaEmbed('#scatter', './scatter_passengers_vs_restaurants.json', {actions:false})
+      .catch(err => { const e=document.querySelector('#errscatter'); e.style.display='block'; e.textContent = err; });
+  </script>
+
+  <h2>How close are restaurants to stations?</h2>
+  <div id="hist" class="vis"></div>
+  <div id="errhist" class="err"></div>
+  <script>
+    vegaEmbed('#hist', './hist_distance_to_station.json', {actions:false})
+      .catch(err => { const e=document.querySelector('#errhist'); e.style.display='block'; e.textContent = err; });
+  </script>
+
+  <footer>
+    <p>Huan Truong • Last updated: October 2025</p>
+  </footer>
+
+</body>
+</html>
