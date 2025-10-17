@@ -35,7 +35,7 @@
         },
         "y": {
           "field": "pax", "type": "quantitative",
-          "title": "Annual passengers",
+          "title": "Log (Annual passengers)",
           "scale": { "type": "log", "domainMin": 1000 },
           "axis": { "format": "~s" }
         },
@@ -43,7 +43,7 @@
         "tooltip": [
           { "field": "Stop_name", "title": "Station" },
           { "field": "distance_km", "title": "Distance (km)", "format": ".2f" },
-          { "field": "pax", "title": "Annual passengers", "format": "," }
+          { "field": "pax", "title": "Log (Annual Passengers)", "format": "," }
         ]
       }
     },
