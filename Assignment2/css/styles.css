@@ -1,6 +1,6 @@
-
+/* 🌐 GLOBAL PAGE SETUP */
 :root {
-  --content-width: 1120px;
+  --content-width: 1120px;   /* main content width for laptops */
   --gutter: 24px;
 }
 
@@ -12,7 +12,7 @@ body {
   padding: 30px 0;
 }
 
-
+/* 🧭 MAIN CONTAINER */
 .container {
   width: min(100%, var(--content-width));
   margin-inline: auto;
@@ -20,7 +20,7 @@ body {
   text-align: left;
 }
 
-
+/* 🧭 HEADINGS */
 h1, h2 {
   font-weight: 700;
   color: #111;
@@ -43,7 +43,7 @@ h2 {
   padding-left: 12px;
 }
 
-
+/* 🧩 VISUALISATION CARDS */
 .vis {
   position: relative;
   width: 100%;
@@ -54,14 +54,14 @@ h2 {
   padding: 16px;
   margin: 0 auto 40px;
   transition: box-shadow 0.3s ease;
-  overflow: hidden; 
+  overflow: hidden; /* prevents overhang */
 }
 
 .vis:hover {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
 }
 
-
+/* make Vega embeds responsive without breaking hover */
 .vega-embed {
   width: 100%;
   max-width: 100%;
@@ -72,10 +72,10 @@ h2 {
   display: block;
   width: 100%;
   max-width: 100%;
-  height: auto;
+  height: auto; /* do NOT use !important (keeps tooltips working) */
 }
 
-
+/* 🧾 ERROR MESSAGES */
 .err {
   display: none;
   margin-top: -15px;
@@ -88,7 +88,7 @@ h2 {
   font-size: 0.9rem;
 }
 
-
+/* ✏️ STORY TEXT */
 .story {
   width: 100%;
   max-width: 900px;
@@ -102,7 +102,7 @@ h2 {
   color: #000;
 }
 
-
+/* 🧭 HEADER */
 header {
   text-align: center;
   margin-bottom: 40px;
@@ -114,7 +114,7 @@ header p {
   margin-top: 8px;
 }
 
-
+/* 🦶 FOOTER */
 footer {
   text-align: center;
   margin-top: 60px;
@@ -122,6 +122,7 @@ footer {
   color: #888;
 }
 
+/* 📱 RESPONSIVE FIXES */
 @media (max-width: 900px) {
   body {
     padding: 22px 10px;
