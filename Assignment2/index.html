@@ -2,33 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Week 10 Homework</title>
+  <title>Week 10 Homework — FIT3179 Assignment 2</title>
+
+  <!-- Vega stack -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.17.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.24.0"></script>
 
   <!-- External CSS -->
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .story { max-width: 900px; line-height: 1.6; color: #333; margin: 10px auto 22px; }
+    .story strong { color: #111; }
+  </style>
 </head>
 <body>
+  <main class="container">
 
-  <header>
-    <h1>Melbourne Train & Restaurant Insights (2024–2025) - FIT3179 Assignment 2</h1>
-    <p>By Huan Truong (33899886)</p>
-  </header>
+    <header>
+      <h1>Melbourne Train & Restaurant Insights (2024–2025) - FIT3179 Assignment 2</h1>
+      <p>By Huan Truong (33899886)</p>
+    </header>
 
-  <h2>Train Stations Map</h2>
-  <div id="symbol_map" class="vis"></div>
-  <div id="err1" class="err"></div>
+    <!-- INTRO -->
+    <h2>Introduction</h2>
+    <section class="story">
+      <p>This page explores passenger numbers across Melbourne’s metropolitan train network and the locations of the Top 500 restaurants (TripAdvisor). The visualisations connect these themes to show how restaurant clusters relate to train stations and how accessibility shapes dining patterns across the city.</p>
+    </section>
 
-  <h2>Top 10 Stations — AM vs PM Peak</h2>
-  <div id="top10_bars" class="vis"></div>
-  <div id="errBars" class="err"></div>
+    <!-- 1) Train map -->
+    <h2>Melbourne Metro Trains Network + Passenger Numbers (FY2024/25)</h2>
+    <div id="symbol_map" class="vis"></div>
+    <div id="err1" class="err"></div>
+    <section class="story">
+      <p>The map establishes the Metro Trains network across metropolitan Melbourne. Circle encoding reveals that stations along the <strong>City Loop</strong> are the most heavily used, reflecting inbound commuters in the morning and outbound movements in the evening. We also see pronounced activity at suburban hubs (e.g., <strong>Box Hill</strong>, <strong>Caulfield</strong>, <strong>Glen Waverley</strong>) where passengers interchange to buses and trams. Usage generally declines with distance from the CBD.</p>
+    </section>
 
-  <h2>Restaurants Map</h2>
-  <div id="restaurant_map" class="vis"></div>
-  <div id="err2" class="err"></div>
+    <!-- 2) Top 10 -->
+    <h2>The Top 10 Stations</h2>
+    <div id="top10_bars" class="vis"></div>
+    <div id="errBars" class="err"></div>
+    <section class="story">
+      <p>This bar chart compares <strong>AM vs PM peaks</strong> for the busiest stations. While <strong>Flinders Street</strong> and <strong>Southern Cross</strong> dominate overall, stations like <strong>Flagstaff</strong> and <strong>Melbourne Central</strong> show stronger PM peaks — consistent with after-work travel toward shopping and dining precincts. In contrast, key suburban hubs such as <strong>South Yarra</strong>, <strong>Footscray</strong>, and <strong>Box Hill</strong> show more balanced AM/PM patterns.</p>
+    </section>
 
+    <!-- 3) Accessibility gradient -->
+    <h2>Accessibility to the City (Distance)</h2>
+    <div id="access" class="vis"></div>
+    <div id="err3" class="err"></div>
+    <section class="story">
+      <p>Plotting annual passengers against <strong>distance from Flinders Street</strong> shows a clear distance–decay trend: usage reduces as we move away from the CBD. There’s a trough just outside the core where trams and short bus trips substitute trains, followed by a rise around <strong>14–18 km</strong> in higher-density suburbs (e.g., <strong>Box Hill</strong>, <strong>Clayton</strong>, <strong>St Albans</strong>), then a gradual decline further out.</p>
+    </section>
+
+    <!-- 4) Restaurants map -->
+    <h2>What about the Top 500 Restaurants?</h2>
+    <div id="restaurant_map" class="vis"></div>
+    <div id="err2" class="err"></div>
+    <section class="story">
+      <p>Restaurant locations cluster strongly in the <strong>CBD</strong>, with additional concentrations in inner suburbs like <strong>Southbank</strong>, <strong>Carlton</strong>, and <strong>Fitzroy</strong>. Filtering by <strong>price category</strong> shows that affordable and mid-range options are broadly distributed across metropolitan Melbourne, while high-end restaurants are more concentrated in the CBD and inner suburbs—areas with higher median incomes and stronger visitor flows.</p>
+    </section>
+
+    <!-- 5) CBD linked map -->
+    <h2>Let's see how they are linked</h2>
+    <div id="cbd" class="vis"></div>
+    <div id="err4" class="err"></div>
+    <section class="story">
+      <p>Zooming into the CBD, a linked map connects restaurants to the nearest <strong>City Loop</strong> stations. Clicking a station highlights nearby restaurants, and selecting a restaurant highlights its closest station. The distribution appears even across the grid, reflecting how the loop provides <strong>efficient access</strong> to different city precincts. Note that nearby inner-north suburbs (e.g., <strong>Carlton</strong>, <strong>Fitzroy</strong>) are served by <strong>Melbourne Central</strong> and <strong>Parliament</strong> despite having no local heavy-rail stop.</p>
+    </section>
+
+    <!-- 6) Scatter -->
+    <h2>Let's consider the suburbs too</h2>
+    <div id="scatter" class="vis"></div>
+    <div id="errscatter" class="err"></div>
+    <section class="story">
+      <p>The scatterplot relates <strong>annual passengers</strong> to the <strong>number of nearby restaurants</strong>. Overall, higher-throughput stations tend to have more restaurants, but this pattern is partly driven by the City Loop. Excluding loop stations, the relationship weakens: for example, <strong>South Yarra</strong> hosts many restaurants, while <strong>Footscray</strong> has high passenger volumes but fewer Top-500 venues—signalling local context matters (land use mix, demographics, and competing centres).</p>
+    </section>
+
+    <!-- 7) Histogram -->
+    <h2>Hmm... what about walking distance?</h2>
+    <div id="hist" class="vis"></div>
+    <div id="errhist" class="err"></div>
+    <section class="story">
+      <p>The histogram shows walking accessibility: a large share of restaurants lie within <strong>400–500 m</strong> of a station. The cumulative line indicates that roughly <strong>two-thirds are within 500 m</strong> and more than <strong>80% within 1 km</strong>, reinforcing that Melbourne’s dining scene is closely aligned with rail access and pedestrian catchments.</p>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section class="story">
+      <p><strong>Conclusion —</strong> From the metro network to individual venues, the visuals reveal a strong interplay between mobility and hospitality. The City Loop anchors movement and activity; suburban hubs extend reach; and restaurants cluster where rail access and foot traffic converge. In short, <em>great food is rarely far from the next train stop</em>.</p>
+    </section>
+
+    <footer>
+      <p>Huan Truong • Last updated: October 2025</p>
+    </footer>
+
+  </main>
+
+  <!-- Embed scripts at the end for faster paint -->
   <script>
     vegaEmbed('#symbol_map', './map_spec.json', {actions:false})
       .catch(err => { const e=document.querySelector('#err1'); e.style.display='block'; e.textContent = err; });
@@ -36,45 +106,20 @@
     vegaEmbed('#top10_bars', './barchart_topstations.json', {actions:false})
       .catch(err => { const e=document.querySelector('#errBars'); e.style.display='block'; e.textContent = err; });
 
-    vegaEmbed('#restaurant_map', './restaurant_pricemap.json', {actions:false})
-      .catch(err => { const e=document.querySelector('#err2'); e.style.display='block'; e.textContent = err; });
-  </script>
-
-  <h2>Accessibility Gradient</h2>
-  <div id="access" class="vis"></div>
-  <div id="err3" class="err"></div>
-  <script>
     vegaEmbed('#access', './accessibility_gradient.json', {actions:false})
       .catch(err => { const e=document.querySelector('#err3'); e.style.display='block'; e.textContent = err; });
-  </script>
 
-  <h2>CBD Restaurants & City Loop (linked)</h2>
-  <div id="cbd" class="vis"></div>
-  <div id="err4" class="err"></div>
-  <script>
+    vegaEmbed('#restaurant_map', './restaurant_pricemap.json', {actions:false})
+      .catch(err => { const e=document.querySelector('#err2'); e.style.display='block'; e.textContent = err; });
+
     vegaEmbed('#cbd', './cbd_linked_map.json', {actions:false})
       .catch(err => { const e=document.querySelector('#err4'); e.style.display='block'; e.textContent = err; });
-  </script>
 
-  <h2>Passenger Volume vs Nearby Restaurants</h2>
-  <div id="scatter" class="vis"></div>
-  <div id="errscatter" class="err"></div>
-  <script>
     vegaEmbed('#scatter', './scatter_passengers_vs_restaurants.json', {actions:false})
       .catch(err => { const e=document.querySelector('#errscatter'); e.style.display='block'; e.textContent = err; });
-  </script>
 
-  <h2>How close are restaurants to stations?</h2>
-  <div id="hist" class="vis"></div>
-  <div id="errhist" class="err"></div>
-  <script>
     vegaEmbed('#hist', './hist_distance_to_station.json', {actions:false})
       .catch(err => { const e=document.querySelector('#errhist'); e.style.display='block'; e.textContent = err; });
   </script>
-
-  <footer>
-    <p>Huan Truong • Last updated: October 2025</p>
-  </footer>
-
 </body>
 </html>
