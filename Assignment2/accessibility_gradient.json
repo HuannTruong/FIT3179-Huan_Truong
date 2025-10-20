@@ -1,9 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {"text": "Accessibility Gradient — Distance vs Annual Passengers", "anchor": "start"},
-  "width": 820,
+  "title": { "text": "Accessibility Gradient — Distance vs Annual Passengers", "anchor": "start", "fontSize": 20,
+    "fontWeight": "bold" },
+  "width": "container",
   "height": 420,
-  "data": { "url": "data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+  "data": { "url": "annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
 
   "transform": [
     { "calculate": "toNumber(datum.Stop_lat)",  "as": "lat" },
@@ -27,6 +28,7 @@
 
   "layer": [
     {
+      "transform": [{ "calculate": "'Stations'", "as": "series" }],
       "mark": { "type": "point", "filled": true, "size": 48, "opacity": 0.8 },
       "encoding": {
         "x": {
@@ -35,28 +37,64 @@
         },
         "y": {
           "field": "pax", "type": "quantitative",
-          "title": "Log (Annual passengers)",
+          "title": "Log (Annual Passengers)",
           "scale": { "type": "log", "domainMin": 1000 },
           "axis": { "format": "~s" }
         },
-        "color": { "value": "#3288bd" },
+        "color": {
+          "field": "series",
+          "type": "nominal",
+          "scale": { "domain": ["Stations", "Trend (LOESS)"], "range": ["#3288bd", "#d53e4f"] },
+          "legend": {
+  "title": "Series",
+  "orient": "top-right",
+  "direction": "vertical",
+  "fillColor": "white",
+  "strokeColor": "#ccc",
+  "cornerRadius": 4,
+  "padding": 6,
+  "offset": 8,
+  "titleFontSize": 14,
+  "labelFontSize": 12
+}
+
+        },
         "tooltip": [
           { "field": "Stop_name", "title": "Station" },
           { "field": "distance_km", "title": "Distance (km)", "format": ".2f" },
-          { "field": "pax", "title": "Log (Annual Passengers)", "format": "," }
+          { "field": "pax", "title": "Annual passengers", "format": "," }
         ]
       }
     },
     {
-    "transform": [
-    { "loess": "pax", "on": "distance_km", "bandwidth": 0.5 }
-    ],
-    "mark": { "type": "line", "stroke": "#d53e4f", "strokeWidth": 2 },
+      "transform": [
+        { "loess": "pax", "on": "distance_km", "bandwidth": 0.5 },
+        { "calculate": "'Trend (LOESS)'", "as": "series" }
+      ],
+      "mark": { "type": "line", "strokeWidth": 2 },
       "encoding": {
         "x": { "field": "distance_km", "type": "quantitative" },
         "y": {
           "field": "pax", "type": "quantitative",
-          "scale": { "type": "linear" }
+          "title": "Passengers",
+          "axis": { "orient": "right", "format": "~s" },
+          "scale": { "type": "linear", "zero": false }
+        },
+        "color": {
+          "field": "series",
+          "type": "nominal",
+          "scale": { "domain": ["Stations", "Trend (LOESS)"], "range": ["#3288bd", "#d53e4f"] },
+          "legend": {
+  "title": "Series",
+  "orient": "top-right",
+  "direction": "vertical",
+  "fillColor": "white",
+  "strokeColor": "#ccc",
+  "cornerRadius": 4,
+  "padding": 6,
+  "offset": 8
+}
+
         }
       }
     }
