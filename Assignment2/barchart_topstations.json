@@ -1,70 +1,201 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Top 10 Melbourne Train Stations — AM vs PM Peak (2024–25)",
+    "text": "Top 10 Melbourne Train Stations",
     "anchor": "start",
-    "fontSize": 18,
+    "fontSize": 20,
     "fontWeight": "bold"
   },
-  "width": 820,
+  "width": 1000,
   "height": 420,
-  "data": { "url": "data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
-  "transform": [
-    { "calculate": "toNumber(datum.Pax_annual)", "as": "total" },
-    { "window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "total", "order": "descending"}] },
-    { "filter": "datum.rank <= 10" },
-    { "fold": ["Pax_AM_peak", "Pax_PM_peak"], "as": ["Period_raw", "Passengers"] },
+
+  "data": { "url": "annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+
+  "params": [
     {
-      "calculate": "indexof(lower(trim(datum.Period_raw)), 'am') >= 0 ? 'AM Peak' : 'PM Peak'",
-      "as": "Period"
-    },
-    { "calculate": "toNumber(datum.Passengers)", "as": "Passengers_num" }
+      "name": "metricSel",
+      "value": "Both (AM vs PM)",
+      "bind": {
+        "input": "select",
+        "name": "Metric: ",
+        "options": ["Both (AM vs PM)", "Total", "AM only", "PM only"]
+      }
+    }
   ],
-  "mark": { "type": "bar", "cornerRadiusEnd": 2, "size": 24 },
-  "encoding": {
-    "x": {
-      "field": "Stop_name",
-      "type": "nominal",
-      "title": "Station",
-      "sort": {"field": "total", "order": "descending"},
-      "axis": { "labelAngle": -30 }
+
+  "transform": [
+    { "calculate": "toNumber(datum.Pax_annual)", "as": "p_total" },
+    { "calculate": "toNumber(datum.Pax_AM_peak)", "as": "p_am" },
+    { "calculate": "toNumber(datum.Pax_PM_peak)", "as": "p_pm" },
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{"field": "p_total", "order": "descending"}]
     },
-    "y": {
-      "field": "Passengers_num",
-      "type": "quantitative",
-      "title": "Passengers",
-      "axis": { "format": "~s" },
-      "stack": null
-    },
-    "color": {
-      "field": "Period",
-      "type": "nominal",
-      "title": "Peak Period",
-      "scale": { "domain": ["AM Peak", "PM Peak"], "range": ["#3288bd", "#d53e4f"] },
-      "legend": {
-        "orient": "none",
-        "legendX": 650,
-        "legendY": 20,
-        "direction": "horizontal",
-        "title": "Peak Period",
-        "labelFontSize": 14,
-        "titleFontSize": 14,
-        "symbolType": "circle",
-        "fillColor": "#ffffffcc",
-        "strokeColor": "#ddd",
-        "cornerRadius": 4,
-        "padding": 5
+    { "filter": "datum.rank <= 10" }
+  ],
+
+  "layer": [
+    {
+      "transform": [
+        { "filter": "metricSel == 'Both (AM vs PM)'" },
+        { "fold": ["p_am", "p_pm"], "as": ["Period_raw", "Passengers"] },
+        { "calculate": "datum.Period_raw == 'p_am' ? 'AM Peak' : 'PM Peak'", "as": "series" }
+      ],
+      "mark": { "type": "bar", "cornerRadiusEnd": 2 },
+      "encoding": {
+        "x": {
+          "field": "Stop_name",
+          "type": "nominal",
+          "title": "Station",
+          "sort": { "field": "p_total", "order": "descending" },
+          "axis": { "labelAngle": -30 }
+        },
+        "y": {
+          "field": "Passengers",
+          "type": "quantitative",
+          "title": "Passengers",
+          "axis": { "format": "~s" }
+        },
+        "xOffset": { "field": "series" },
+        "color": {
+          "field": "series",
+          "type": "nominal",
+          "title": "Metric",
+          "scale": {
+            "domain": ["AM Peak", "PM Peak", "Total"],
+            "range": ["#2b83ba", "#d53e4f", "#1b9e77"]
+          },
+          "legend": { "orient": "top", "direction": "horizontal", "labelFontSize": 12, "titleFontSize": 14 }
+        },
+        "tooltip": [
+          { "field": "Stop_name", "title": "Station" },
+          { "field": "p_total", "title": "Annual", "format": "," },
+          { "field": "p_am", "title": "AM peak", "format": "," },
+          { "field": "p_pm", "title": "PM peak", "format": "," }
+        ]
       }
     },
-    "xOffset": { "field": "Period" },
-    "tooltip": [
-      { "field": "Stop_name", "title": "Station" },
-      { "field": "Period", "title": "Period" },
-      { "field": "Passengers_num", "title": "Passengers", "format": "," }
-    ]
-  },
+
+    {
+      "transform": [
+        { "filter": "metricSel == 'Total'" },
+        { "calculate": "'Total'", "as": "series" }
+      ],
+      "mark": { "type": "bar", "cornerRadiusEnd": 2 },
+      "encoding": {
+        "x": {
+          "field": "Stop_name",
+          "type": "nominal",
+          "title": "Station",
+          "sort": { "field": "p_total", "order": "descending" },
+          "axis": { "labelAngle": -30 }
+        },
+        "y": {
+          "field": "p_total",
+          "type": "quantitative",
+          "title": "Passengers",
+          "axis": { "format": "~s" }
+        },
+        "color": {
+          "field": "series",
+          "type": "nominal",
+          "title": "Metric",
+          "scale": {
+            "domain": ["AM Peak", "PM Peak", "Total"],
+            "range": ["#2b83ba", "#d53e4f", "#1b9e77"]
+          },
+          "legend": { "orient": "top", "direction": "horizontal" }
+        },
+        "tooltip": [
+          { "field": "Stop_name", "title": "Station" },
+          { "field": "p_total", "title": "Annual", "format": "," },
+          { "field": "p_am", "title": "AM peak", "format": "," },
+          { "field": "p_pm", "title": "PM peak", "format": "," }
+        ]
+      }
+    },
+
+    {
+      "transform": [
+        { "filter": "metricSel == 'AM only'" },
+        { "calculate": "'AM Peak'", "as": "series" }
+      ],
+      "mark": { "type": "bar", "cornerRadiusEnd": 2 },
+      "encoding": {
+        "x": {
+          "field": "Stop_name",
+          "type": "nominal",
+          "title": "Station",
+          "sort": { "field": "p_total", "order": "descending" },
+          "axis": { "labelAngle": -30 }
+        },
+        "y": {
+          "field": "p_am",
+          "type": "quantitative",
+          "title": "Passengers",
+          "axis": { "format": "~s" }
+        },
+        "color": {
+          "field": "series",
+          "type": "nominal",
+          "title": "Metric",
+          "scale": {
+            "domain": ["AM Peak", "PM Peak", "Total"],
+            "range": ["#2b83ba", "#d53e4f", "#1b9e77"]
+          },
+          "legend": { "orient": "top", "direction": "horizontal" }
+        },
+        "tooltip": [
+          { "field": "Stop_name", "title": "Station" },
+          { "field": "p_total", "title": "Annual", "format": "," },
+          { "field": "p_am", "title": "AM peak", "format": "," },
+          { "field": "p_pm", "title": "PM peak", "format": "," }
+        ]
+      }
+    },
+
+    {
+      "transform": [
+        { "filter": "metricSel == 'PM only'" },
+        { "calculate": "'PM Peak'", "as": "series" }
+      ],
+      "mark": { "type": "bar", "cornerRadiusEnd": 2 },
+      "encoding": {
+        "x": {
+          "field": "Stop_name",
+          "type": "nominal",
+          "title": "Station",
+          "sort": { "field": "p_total", "order": "descending" },
+          "axis": { "labelAngle": -30 }
+        },
+        "y": {
+          "field": "p_pm",
+          "type": "quantitative",
+          "title": "Passengers",
+          "axis": { "format": "~s" }
+        },
+        "color": {
+          "field": "series",
+          "type": "nominal",
+          "title": "Metric",
+          "scale": {
+            "domain": ["AM Peak", "PM Peak", "Total"],
+            "range": ["#2b83ba", "#d53e4f", "#1b9e77"]
+          },
+          "legend": { "orient": "top", "direction": "horizontal" }
+        },
+        "tooltip": [
+          { "field": "Stop_name", "title": "Station" },
+          { "field": "p_total", "title": "Annual", "format": "," },
+          { "field": "p_am", "title": "AM peak", "format": "," },
+          { "field": "p_pm", "title": "PM peak", "format": "," }
+        ]
+      }
+    }
+  ],
+
   "config": {
-    "axis": { "labelFontSize": 11, "titleFontSize": 12 },
+    "axis": { "labelFontSize": 12, "titleFontSize": 14 },
     "view": { "stroke": "transparent" }
   }
 }
