@@ -33,7 +33,7 @@
   "layer": [
     {
       "data": {
-        "url": "output.json",
+        "url": "data/output.json",
         "format": { "type": "topojson", "feature": "vic_localities" }
       },
       "mark": { "type": "geoshape", "fill": "#f7f7f7", "stroke": "#c9c9c9", "strokeWidth": 0.75 }
@@ -44,7 +44,7 @@
     },
 
     {
-      "data": { "url": "restaurants_with_nearest_station.csv" },
+      "data": { "url": "data/restaurants_with_nearest_station.csv" },
       "transform": [
         { "calculate": "toNumber(datum.rest_long)", "as": "lonNum" },
         { "calculate": "toNumber(datum.rest_lat)",  "as": "latNum"  },
