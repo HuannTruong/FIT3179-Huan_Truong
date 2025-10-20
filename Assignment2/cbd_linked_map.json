@@ -11,17 +11,17 @@
 
   "layer": [
     {
-      "data": { "url": "./output.json", "format": { "type": "topojson", "feature": "vic_localities" } },
+      "data": { "url": "./data/output.json", "format": { "type": "topojson", "feature": "vic_localities" } },
       "mark": { "type": "geoshape", "fill": "#f7f7f7", "stroke": "#d3d3d3", "strokeWidth": 0.7 }
     },
 
     {
-      "data": { "url": "./train_lines_only_noR.json", "format": { "type": "topojson", "feature": "train_lines_only_noR" } },
+      "data": { "url": "./data/train_lines_only_noR.json", "format": { "type": "topojson", "feature": "train_lines_only_noR" } },
       "mark": { "type": "geoshape", "fill": null, "stroke": "#444", "strokeWidth": 1.2 }
     },
 
     {
-      "data": { "url": "./restaurants_with_nearest_station.csv" },
+      "data": { "url": "./data/restaurants_with_nearest_station.csv" },
       "transform": [
         { "calculate": "toNumber(datum.rest_long)", "as": "lon" },
         { "calculate": "toNumber(datum.rest_lat)",  "as": "lat"  },
@@ -57,7 +57,7 @@
     },
 
     {
-      "data": { "url": "./annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+      "data": { "url": "./data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
       "transform": [
         { "calculate": "toNumber(datum.Stop_long)", "as": "lon" },
         { "calculate": "toNumber(datum.Stop_lat)",  "as": "lat"  },
@@ -97,7 +97,7 @@
     },
 
     {
-      "data": { "url": "./annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+      "data": { "url": "./data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
       "transform": [
         { "calculate": "toNumber(datum.Stop_long)", "as": "lon" },
         { "calculate": "toNumber(datum.Stop_lat)",  "as": "lat"  },
