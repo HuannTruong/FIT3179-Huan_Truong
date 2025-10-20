@@ -9,7 +9,7 @@
   "width": 1000,
   "height": 420,
 
-  "data": { "url": "annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+  "data": { "url": "data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
 
   "params": [
     {
