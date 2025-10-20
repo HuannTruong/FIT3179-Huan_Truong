@@ -4,7 +4,7 @@
     "fontWeight": "bold" },
   "width": "container",
   "height": 420,
-  "data": { "url": "annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+  "data": { "url": "data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
 
   "transform": [
     { "calculate": "toNumber(datum.Stop_lat)",  "as": "lat" },
