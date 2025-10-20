@@ -4,12 +4,12 @@
     "text": "Distance of Restaurants from Nearest Train Station",
     "subtitle": "250 m bins; line shows cumulative %",
     "anchor": "start",
-    "fontSize": 18,
+    "fontSize": 20,
     "fontWeight": "bold"
   },
-  "width": 820,
+  "width": "container",
   "height": 420,
-  "data": { "url": "./data/restaurants_with_nearest_station.csv" },
+  "data": { "url": "./restaurants_with_nearest_station.csv" },
 
   "transform": [
     { "calculate": "toNumber(datum.distance_to_station_km)", "as": "dist_km" },
@@ -46,9 +46,11 @@
         { "window": [{ "op": "sum", "field": "n", "as": "cumN" }], "sort": [{ "field": "b0", "order": "ascending" }] },
         { "joinaggregate": [{ "op": "sum", "field": "n", "as": "totalN" }] },
         { "calculate": "datum.cumN / datum.totalN", "as": "cumFrac" },
-        { "calculate": "(datum.b0 + datum.b1)/2", "as": "mid" }
+        { "calculate": "(datum.b0 + datum.b1)/2", "as": "mid" },
+
+        { "calculate": "'Cumulative (line)'", "as": "series" }
       ],
-      "mark": { "type": "line", "stroke": "#d53e4f", "strokeWidth": 2 },
+      "mark": { "type": "line", "strokeWidth": 2 },
       "encoding": {
         "x": { "field": "mid", "type": "quantitative", "title": null },
         "y": {
@@ -56,6 +58,22 @@
           "type": "quantitative",
           "axis": { "title": "Cumulative %", "format": ".0%", "orient": "right", "grid": false },
           "scale": { "domain": [0, 1] }
+        },
+        "color": {
+          "field": "series",
+          "type": "nominal",
+          "scale": { "domain": ["Cumulative (line)"], "range": ["#d53e4f"] },
+          "legend": {
+            "title": "Series",
+            "orient": "top-right",
+            "direction": "vertical",
+            "padding": 6,
+            "cornerRadius": 6,
+            "fillColor": "white",
+            "strokeColor": "#ddd",
+            "labelFontSize": 11,
+            "titleFontSize": 12
+          }
         },
         "tooltip": [
           { "field": "cumFrac", "title": "Cumulative", "format": ".0%" }
