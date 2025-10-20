@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Week 10 Homework — FIT3179 Assignment 2</title>
+  <title>FIT3179 Assignment 2</title>
 
   <!-- Vega stack -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
@@ -12,6 +12,7 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 
+  <!-- Tiny local helper styles for story text (optional) -->
   <style>
     .story { max-width: 900px; line-height: 1.6; color: #333; margin: 10px auto 22px; }
     .story strong { color: #111; }
@@ -27,73 +28,236 @@
 
     <!-- INTRO -->
     <h2>Introduction</h2>
-    <section class="story">
-      <p>This page explores passenger numbers across Melbourne’s metropolitan train network and the locations of the Top 500 restaurants (TripAdvisor). The visualisations connect these themes to show how restaurant clusters relate to train stations and how accessibility shapes dining patterns across the city.</p>
-    </section>
+<section class="story">
+  <p>
+    This page explores Melbourne’s metropolitan landscape by examining the relationship between 
+    <strong>train passenger activity</strong> and the <strong>distribution of top-rated restaurants</strong> (TripAdvisor, 2024–25). 
+    Using open transport data and spatial visualisations, it reveals how patterns of rail usage and station proximity correspond with areas of high dining concentration across the city.
+  </p>
 
-    <!-- 1) Train map -->
+  <p>
+    By combining transport and hospitality data, this page aims to highlight the interdependence between public transport accessibility and urban vibrancy. 
+    Stations with strong connectivity often anchor mixed-use activity, not just as nodes for travel but also as magnets for dining, leisure, and local commerce. 
+    In doing so, these insights underscore the role of shaping where people move, meet, and eat across Melbourne.
+  </p>
+</section>
+
+
+    <!-- 1) Train map-->
     <h2>Melbourne Metro Trains Network + Passenger Numbers (FY2024/25)</h2>
     <div id="symbol_map" class="vis"></div>
-    <div id="err1" class="err"></div>
     <section class="story">
-      <p>The map establishes the Metro Trains network across metropolitan Melbourne. Circle encoding reveals that stations along the <strong>City Loop</strong> are the most heavily used, reflecting inbound commuters in the morning and outbound movements in the evening. We also see pronounced activity at suburban hubs (e.g., <strong>Box Hill</strong>, <strong>Caulfield</strong>, <strong>Glen Waverley</strong>) where passengers interchange to buses and trams. Usage generally declines with distance from the CBD.</p>
+      <p>
+        The map illustrates the Metro Trains network across metropolitan Melbourne, visualised through colour intensity to represent annual passenger volumes on a log scale. Stations along the City Loop stand out as the busiest, driven by heavy commuter inflows each morning and outflows each evening.
+      </p>
+
+      <p>
+        Suburban hubs such as Box Hill, Caulfield, and Glen Waverley also show strong activity, acting as interchange points between rail, tram, and bus networks. These nodes highlight the decentralised structure of Melbourne's rail system, where activity remains concentrated at key suburban centres.
+      </p>
+
+      <p>
+        Passenger intensity generally declines with increasing distance from the CBD, reflecting how accessibility, employment density, and population distribution shape transit demand across the city's rail corridors.
+      </p>
     </section>
+
 
     <!-- 2) Top 10 -->
     <h2>The Top 10 Stations</h2>
     <div id="top10_bars" class="vis"></div>
     <div id="errBars" class="err"></div>
-    <section class="story">
-      <p>This bar chart compares <strong>AM vs PM peaks</strong> for the busiest stations. While <strong>Flinders Street</strong> and <strong>Southern Cross</strong> dominate overall, stations like <strong>Flagstaff</strong> and <strong>Melbourne Central</strong> show stronger PM peaks — consistent with after-work travel toward shopping and dining precincts. In contrast, key suburban hubs such as <strong>South Yarra</strong>, <strong>Footscray</strong>, and <strong>Box Hill</strong> show more balanced AM/PM patterns.</p>
-    </section>
+<section class="story">
+  <p>
+    This bar chart compares <strong>AM peak</strong>, <strong>PM peak</strong>, and <strong>Total</strong> passenger volumes for the ten busiest stations across metropolitan Melbourne. 
+    The Total view highlights the dominance of <em>Flinders Street</em>, <em>Southern Cross</em>, and <em>Melbourne Central</em> , all of which is located within the City Loop.
+    These central hubs funnel most train activity through the network. Together, these three stations account for the majority of total boardings and alightings, reflecting 
+    their critical role as interchange and destination points for both commuters and visitors.
+  </p>
+
+  <p>
+    During the AM peak, suburban stations such as <em>Box Hill</em>, <em>Caulfield</em>, and <em>Footscray</em> show comparatively stronger activity, 
+    representing inbound commuter flows toward the CBD. In contrast, inner-city stations like <em>Flagstaff</em> and <em>Parliament</em> record smaller morning volumes 
+    since they primarily serve office workers arriving rather than departing at that time. This pattern reflects Melbourne’s radial commuting structure, where residential suburbs 
+    feed into central employment zones during morning hours.
+  </p>
+
+  <p>
+    The PM peak view reverses this trend, showing a sharp rise in activity at <em>Flinders Street</em>, <em>Southern Cross</em>, and <em>Melbourne Central</em>. 
+    These stations dominate evening travel as thousands of workers, shoppers, and diners return home or move between city precincts. 
+    Notably, <em>Flagstaff</em> and <em>Melbourne Central</em> demonstrate stronger PM peaks relative to their AM figures. This is a sign of sustained after-work 
+    movement toward leisure, shopping, and dining destinations. 
+  </p>
+
+  <p>
+    Meanwhile, key suburban hubs such as <em>South Yarra</em>, <em>Richmond</em>, and <em>Footscray</em> shows a balanced AM–PM patterns, reflecting their 
+    dual role as both employment and residential catchments. 
+    Overall, the combination of all three metrics reveals a clear temporal rhythm across the network. A strong AM inflow from the suburbs and a
+    concentrated PM outflows through central hubs, and consistent total throughput reinforcing the City Loop’s key role in Melbourne's rail system.
+  </p>
+</section>
+
 
     <!-- 3) Accessibility gradient -->
     <h2>Accessibility to the City (Distance)</h2>
     <div id="access" class="vis"></div>
     <div id="err3" class="err"></div>
-    <section class="story">
-      <p>Plotting annual passengers against <strong>distance from Flinders Street</strong> shows a clear distance–decay trend: usage reduces as we move away from the CBD. There’s a trough just outside the core where trams and short bus trips substitute trains, followed by a rise around <strong>14–18 km</strong> in higher-density suburbs (e.g., <strong>Box Hill</strong>, <strong>Clayton</strong>, <strong>St Albans</strong>), then a gradual decline further out.</p>
-    </section>
+<section class="story">
+  <p>
+    Plotting annual passengers against distance from Flinders Street reveals a clear decline. Station usage generally declines the further one travels from the city centre. The steep initial drop within the first 5 km reflects Melbourne’s concentration of employment, education, and entertainment within the CBD, where short trips are often made on foot or by tram instead of train. 
+  </p>
+
+  <p>
+    Beyond this inner zone, passenger volumes stabilise at moderate levels between approximately 6 – 12 km, representing mid-ring suburbs where commuters rely more heavily other modes of transport such as local buses or trams. A noticeable rebound occurs around <strong>14 – 18 km</strong>, where they coincide with dense activity centres such as Box Hill, Clayton, and St Albans. These areas act as secondary employment and retail hubs, generating both inbound and outbound travel throughout the day.
+  </p>
+
+  <p>
+    The <strong>LOESS trend line</strong> (in red) visually emphasises this pattern: a sharp decline near the city, a trough in middle distances, and a gradual upturn in high-density suburban nodes before tapering off again in outer areas. Stations beyond 25 km show a steady decline in usage, reflecting lower population density, longer travel times, and greater reliance on park-and-ride or feeder buses.
+  </p>
+</section>
+
 
     <!-- 4) Restaurants map -->
     <h2>What about the Top 500 Restaurants?</h2>
-    <div id="restaurant_map" class="vis"></div>
-    <div id="err2" class="err"></div>
-    <section class="story">
-      <p>Restaurant locations cluster strongly in the <strong>CBD</strong>, with additional concentrations in inner suburbs like <strong>Southbank</strong>, <strong>Carlton</strong>, and <strong>Fitzroy</strong>. Filtering by <strong>price category</strong> shows that affordable and mid-range options are broadly distributed across metropolitan Melbourne, while high-end restaurants are more concentrated in the CBD and inner suburbs—areas with higher median incomes and stronger visitor flows.</p>
-    </section>
+<section class="section-row side-by-side">
+  <div id="restaurant_map" class="vis vis--controls-tight"></div>
+ <div class="story story--side">
+  <p>
+    Restaurant locations cluster strongly in the <strong>CBD</strong>, with additional concentrations in inner suburbs such as <strong>Southbank</strong>, <strong>Carlton</strong>, and <strong>Fitzroy</strong>. This spatial pattern highlights how Melbourne’s hospitality scene aligns with areas of high pedestrian activity, cultural attractions, and commercial density.
+  </p>
 
-    <!-- 5) CBD linked map -->
+  <p>
+    Filtering by <strong>price category</strong> shows distinct spatial segregation. Affordable and mid-range restaurants (<strong>$</strong> and <strong>$$–$$$</strong>) are distributed broadly along the train corridors and local activity centres, providing accessibility to a wide population. In contrast, premium venues (<strong>$$$$</strong>) are heavily concentrated within the central grid and inner-east suburbs, reflecting higher median incomes, strong tourism flows, and proximity to business districts.
+  </p>
+
+  <p>
+    The clustering pattern also corresponds with <strong>transport accessibility</strong>: almost all top-rated restaurants fall within short walking distance of railway stations or tram lines. This indicates that mobility infrastructure not only shapes commuting patterns but also influences where high-value leisure and dining activities occur across metropolitan Melbourne.
+  </p>
+</div>
+</div>
+
+</section>
+
+
+      <!-- 5) CBD linked map -->
     <h2>Let's see how they are linked</h2>
-    <div id="cbd" class="vis"></div>
-    <div id="err4" class="err"></div>
-    <section class="story">
-      <p>Zooming into the CBD, a linked map connects restaurants to the nearest <strong>City Loop</strong> stations. Clicking a station highlights nearby restaurants, and selecting a restaurant highlights its closest station. The distribution appears even across the grid, reflecting how the loop provides <strong>efficient access</strong> to different city precincts. Note that nearby inner-north suburbs (e.g., <strong>Carlton</strong>, <strong>Fitzroy</strong>) are served by <strong>Melbourne Central</strong> and <strong>Parliament</strong> despite having no local heavy-rail stop.</p>
-    </section>
+<section class="section-row side-by-side">
+  <div id="cbd" class="vis vis--wide"></div>
+
+  <div class="story story--side">
+
+     <p><strong>Station-Restaurant Relationships:</strong></p>
+        <ul>
+          <li><strong>Flinders Street</strong> serves as the central hub, with restaurants radiating throughout the entire CBD grid</li>
+          <li><strong>Melbourne Central</strong> anchors the northern CBD and provides access to Carlton's Lygon Street dining precinct</li>
+          <li><strong>Southern Cross</strong> connects the western CBD and Docklands area with its waterfront restaurants</li>
+          <li><strong>Parliament</strong> serves the eastern CBD and provides the closest access to Fitzroy's Brunswick Street</li>
+          <li><strong>Flagstaff</strong>, while having fewer immediate restaurants, serves the legal and business district</li>
+        </ul>
+      
+        <p><strong>Key Insight:</strong> Despite inner-northern suburbs like <strong>Carlton</strong> and <strong>Fitzroy</strong> having no local heavy-rail stations, they remain well-connected to top dining options via <strong>Melbourne Central</strong> and <strong>Parliament</strong> stations, demonstrating the loop's extended reach beyond the immediate CBD boundaries.</p>
+
+        <p>The clustering pattern shows that no single station dominates restaurant distribution, highlighting the loop's success in providing <strong>equitable access</strong> to Melbourne's culinary offerings across different city precincts.</p>
+
+  </div>
+</section>
 
     <!-- 6) Scatter -->
     <h2>Let's consider the suburbs too</h2>
     <div id="scatter" class="vis"></div>
     <div id="errscatter" class="err"></div>
-    <section class="story">
-      <p>The scatterplot relates <strong>annual passengers</strong> to the <strong>number of nearby restaurants</strong>. Overall, higher-throughput stations tend to have more restaurants, but this pattern is partly driven by the City Loop. Excluding loop stations, the relationship weakens: for example, <strong>South Yarra</strong> hosts many restaurants, while <strong>Footscray</strong> has high passenger volumes but fewer Top-500 venues—signalling local context matters (land use mix, demographics, and competing centres).</p>
-    </section>
+   <section class="story">
+  <p>
+    This scatterplot explores the relationship between <strong>annual passenger volumes</strong> 
+    and the <strong>number of nearby Top 500 restaurants</strong> for each train station across metropolitan Melbourne.
+  </p>
+
+  <p>
+    When viewing <strong>all stations</strong>, the pattern is heavily influenced by the 
+    <strong>City Loop</strong> — particularly <em>Flinders Street</em>, <em>Southern Cross</em>, and 
+    <em>Melbourne Central</em> — which attract exceptionally high passenger numbers and large restaurant clusters. 
+    These central hubs dominate the scale and create an apparent strong positive relationship between restaurant density 
+    and rail usage.
+  </p>
+
+  <p>
+    However, when <strong>City Loop stations are excluded</strong>, the relationship becomes much weaker. 
+    Suburban stations such as <em>South Yarra</em>, <em>Box Hill</em>, and <em>Richmond</em> show moderate restaurant 
+    concentrations despite varying passenger volumes, suggesting that local factors — like commercial zoning, nearby activity 
+    centres, and demographics — play a more significant role than passenger traffic alone.
+  </p>
+
+  <p>
+    Overall, the comparison highlights how the <strong>City Loop amplifies the visibility</strong> of Melbourne’s core 
+    dining and transport activity, while suburban areas demonstrate <strong>more diverse, locally driven patterns</strong> 
+    of restaurant clustering.
+  </p>
+</section>
+
 
     <!-- 7) Histogram -->
     <h2>Hmm... what about walking distance?</h2>
     <div id="hist" class="vis"></div>
     <div id="errhist" class="err"></div>
-    <section class="story">
-      <p>The histogram shows walking accessibility: a large share of restaurants lie within <strong>400–500 m</strong> of a station. The cumulative line indicates that roughly <strong>two-thirds are within 500 m</strong> and more than <strong>80% within 1 km</strong>, reinforcing that Melbourne’s dining scene is closely aligned with rail access and pedestrian catchments.</p>
-    </section>
+<section class="story">
+  <p>
+    The histogram highlights walking accessibility between restaurants and train stations across metropolitan Melbourne. 
+    A large proportion of restaurants are located within <strong>400–500 metres</strong> of a train station, indicating that most venues are easily reachable on foot. 
+    This suggests that Melbourne’s most popular dining areas tend to cluster within established public transport hubs, 
+    where foot traffic and visibility support higher customer turnover.
+  </p>
+
+  <p>
+    The cumulative line in red reinforces this trend, showing that approximately <strong>two-thirds (≈67%)</strong> of restaurants lie within <strong>500 metres</strong> 
+    of a station, while more than 80% are within 1 kilometre. Beyond that distance, accessibility drops sharply where there are relatively few restaurants 
+    are more than 1.5 km away, underscoring the importance of proximity to rail corridors in shaping Melbourne’s dining geography.
+  </p>
+
+  <p>
+    This pattern illustrates how the developemt of key public transport areas influences urban food distribution. Restaurants naturally concentrate where public transport, 
+    walking infrastructure, and customer demand intersect. The strong accessibility gradient implies that rail-connected precincts such as <em>South Yarra</em>, 
+    <em>Richmond</em>, and <em>Flinders Street</em> are not only transport nodes but also are social and economic anchors for surrounding nightlife 
+    and retail activity.
+  </p>
+</section>
+
 
     <!-- CONCLUSION -->
-    <section class="story">
-      <p><strong>Conclusion —</strong> From the metro network to individual venues, the visuals reveal a strong interplay between mobility and hospitality. The City Loop anchors movement and activity; suburban hubs extend reach; and restaurants cluster where rail access and foot traffic converge. In short, <em>great food is rarely far from the next train stop</em>.</p>
-    </section>
+     <h2>Conclusion</h2>
+<section class="story">
+  <p>
+    From the metro network to individual venues, the visuals together reveal a strong and consistent relationship between mobility and hospitality
+    in metropolitan Melbourne. The City Loop anchors daily movement and economic activity within the CBD, 
+    while suburban hubs such as <em>Box Hill</em>, <em>Caulfield</em>, and <em>Footscray</em> extend this network’s reach into diverse residential and commercial areas.
+  </p>
+
+  <p>
+    The analysis shows that rail accessibility strongly correlates with restaurant density. 
+    Most top-rated venues are within easy walking distance of a station, typically under 500 metres. This reinforced how proximity to public transport underpins 
+    Melbourne’s vibrant food culture. This accessibility supports not only local residents but also tourists and commuters seeking convenient, connected places to dine.
+  </p>
+
+  <p>
+    Ultimately, the findings demonstrate that great food and great transport go hand-in-hand. 
+    Melbourne’s restaurants thrive where trains, trams, and footpaths converge, highlighting how effective transit planning contributes not just to mobility 
+    but also to economic vitality, social engagement, and cultural experience. 
+    In essence, <em>Melbourne’s best meals are never far from the next train stop</em>.
+  </p>
+</section>
+
 
     <footer>
       <p>Huan Truong • Last updated: October 2025</p>
+
+      <p> 
+        Sources: Data.vic.gov (https://discover.data.vic.gov.au/dataset/annual-metropolitan-train-station-patronage-station-entries) 
+      <p>
+
+      </p>
+                  Kaggle -  Top 500 Melbourne Eateries (https://www.kaggle.com/datasets/kanchana1990/top-500-melbourne-eateries-tripadvisors-best)
+      <p>
+
+      </p>
+                  Metro Trains - Network Maps (https://www.metrotrains.com.au/maps/)
+      </p>
     </footer>
 
   </main>
