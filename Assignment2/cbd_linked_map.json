@@ -1,24 +1,27 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {"text": "Melbourne CBD — City Loop Stations ↔ Nearby Restaurants", "anchor": "start"},
-  "width": 720,
+  "title": {"text": "Melbourne CBD — City Loop Stations ↔ Nearby Restaurants", "anchor": "start",
+    "fontSize": 20,
+    "fontWeight": "bold"
+  },
+  "width": "container",
   "height": 560,
 
   "projection": { "type": "mercator", "center": [144.965, -37.815], "scale": 550000 },
 
   "layer": [
     {
-      "data": { "url": "./data/output.json", "format": { "type": "topojson", "feature": "vic_localities" } },
+      "data": { "url": "./output.json", "format": { "type": "topojson", "feature": "vic_localities" } },
       "mark": { "type": "geoshape", "fill": "#f7f7f7", "stroke": "#d3d3d3", "strokeWidth": 0.7 }
     },
 
     {
-      "data": { "url": "./data/train_lines_only_noR.json", "format": { "type": "topojson", "feature": "train_lines_only_noR" } },
+      "data": { "url": "./train_lines_only_noR.json", "format": { "type": "topojson", "feature": "train_lines_only_noR" } },
       "mark": { "type": "geoshape", "fill": null, "stroke": "#444", "strokeWidth": 1.2 }
     },
 
     {
-      "data": { "url": "./data/restaurants_with_nearest_station.csv" },
+      "data": { "url": "./restaurants_with_nearest_station.csv" },
       "transform": [
         { "calculate": "toNumber(datum.rest_long)", "as": "lon" },
         { "calculate": "toNumber(datum.rest_lat)",  "as": "lat"  },
@@ -54,7 +57,7 @@
     },
 
     {
-      "data": { "url": "./data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+      "data": { "url": "./annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
       "transform": [
         { "calculate": "toNumber(datum.Stop_long)", "as": "lon" },
         { "calculate": "toNumber(datum.Stop_lat)",  "as": "lat"  },
@@ -94,7 +97,7 @@
     },
 
     {
-      "data": { "url": "./data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+      "data": { "url": "./annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
       "transform": [
         { "calculate": "toNumber(datum.Stop_long)", "as": "lon" },
         { "calculate": "toNumber(datum.Stop_lat)",  "as": "lat"  },
