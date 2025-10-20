@@ -10,7 +10,7 @@
   "width": "container",
   "height": 420,
 
-  "data": { "url": "./restaurants_with_nearest_station.csv" },
+  "data": { "url": "./data/restaurants_with_nearest_station.csv" },
 
   "params": [
     {
@@ -42,7 +42,7 @@
     {
       "lookup": "nearest_station_name",
       "from": {
-        "data": { "url": "./annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
+        "data": { "url": "./data/annual_metropolitan_train_station_entries_fy_2024_2025.csv" },
         "key": "Stop_name",
         "fields": ["Pax_annual"]
       }
