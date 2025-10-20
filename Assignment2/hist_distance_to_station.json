@@ -9,7 +9,7 @@
   },
   "width": "container",
   "height": 420,
-  "data": { "url": "./restaurants_with_nearest_station.csv" },
+  "data": { "url": "./data/restaurants_with_nearest_station.csv" },
 
   "transform": [
     { "calculate": "toNumber(datum.distance_to_station_km)", "as": "dist_km" },
